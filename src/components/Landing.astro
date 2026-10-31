@@ -1,0 +1,233 @@
+---
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import Icon from './Icon.astro';
+import PhoneFrame from './PhoneFrame.astro';
+import type { Lang } from '../data/content';
+import { content } from '../data/content';
+import type { ReleaseInfo } from '../lib/release';
+
+interface Props {
+  lang: Lang;
+  release: ReleaseInfo;
+}
+
+const { lang, release } = Astro.props;
+const t = content[lang];
+const isAr = lang === 'ar';
+const home = isAr ? '/ar/' : '/';
+const alternatePath = isAr ? '/' : '/ar/';
+const heroImage = isAr ? '/screenshots/home-ar.webp' : '/screenshots/home-light.webp';
+const otherHome = isAr ? '/screenshots/home-light.webp' : '/screenshots/home-ar.webp';
+---
+
+<Header lang={lang} t={t} home={home} alternatePath={alternatePath} />
+
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">{t.hero.eyebrow}</p>
+        <h1>
+          {t.hero.title}
+          <span class="accent">{t.hero.titleAccent}</span>
+        </h1>
+        <p class="hero-lede">{t.hero.body}</p>
+        <div class="hero-actions">
+          <a class="button primary" href={release.apkUrl} rel="noopener">
+            <Icon name="download" size={17} />
+            {t.hero.primary}
+          </a>
+          <a class="button ghost" href="#features">{t.hero.secondary}</a>
+        </div>
+        <ul class="hero-trust">
+          {
+            t.hero.trust.map((item) => (
+              <li>
+                <span class="check" aria-hidden="true">
+                  <Icon name="check" size={10} />
+                </span>
+                {item}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="hero-stage" aria-label={isAr ? 'لقطات من التطبيق' : 'App screenshots'}>
+        <div class="hero-arch" aria-hidden="true"></div>
+        <div class="hero-phone hero-phone-back">
+          <PhoneFrame
+            src="/screenshots/qibla.webp"
+            alt={isAr ? 'شاشة القبلة في منادي' : 'Munadi Qibla screen'}
+          />
+        </div>
+        <div class="hero-phone hero-phone-front">
+          <PhoneFrame
+            src={heroImage}
+            alt={isAr ? 'شاشة منادي الرئيسية بالعربية' : 'Munadi home screen'}
+            eager
+          />
+        </div>
+        <div class="hero-badge">
+          <Icon name="shield" size={15} />
+          {t.hero.badge}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-label={isAr ? 'مزايا رئيسية' : 'Highlights'}>
+    <div class="container strip-inner">
+      {
+        t.strip.map((item, index) => (
+          <>
+            {index > 0 ? <span class="sep" aria-hidden="true" /> : null}
+            <span>{item}</span>
+          </>
+        ))
+      }
+    </div>
+  </div>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{t.features.eyebrow}</p>
+        <h2 class="section-title">{t.features.title}</h2>
+        <p class="section-body">{t.features.body}</p>
+      </div>
+      <div class="features-grid">
+        {
+          t.features.items.map((feature, index) => (
+            <article class:list={['feature', { dark: index === t.features.items.length - 1 }]}>
+              <span class="feature-icon" aria-hidden="true">
+                <Icon name={feature.icon} size={21} />
+              </span>
+              <h3>{feature.title}</h3>
+              <p>{feature.body}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container qatar-grid">
+      <div>
+        <p class="eyebrow">{t.qatar.eyebrow}</p>
+        <h2 class="section-title">{t.qatar.title}</h2>
+        <p class="section-body">{t.qatar.body}</p>
+        <ul class="qatar-points">
+          {
+            t.qatar.points.map((point, index) => (
+              <li>
+                <span class="num">{String(index + 1).padStart(2, '0')}</span>
+                <span>{point}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="qatar-card">
+        <p class="qatar-label">{t.qatar.label}</p>
+        <div>
+          <p class="qatar-stat">{t.qatar.stat}</p>
+          <p class="qatar-stat-label">{t.qatar.statLabel}</p>
+          <p class="qatar-quote">“{t.qatar.quote}”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="bilingual-panel">
+        <div class="bilingual-copy">
+          <p class="eyebrow">{t.bilingual.eyebrow}</p>
+          <h2 class="section-title">{t.bilingual.title}</h2>
+          <p class="section-body">{t.bilingual.body}</p>
+          <div class="chips">
+            <span class:list={['chip', { active: isAr }]} lang="ar" dir="rtl">العربية</span>
+            <span class:list={['chip', { active: !isAr }]} lang="en" dir="ltr">English</span>
+          </div>
+        </div>
+        <div class="bilingual-phone">
+          <PhoneFrame src={otherHome} alt={t.bilingual.imageAlt} />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="download">
+    <div class="container">
+      <div class="download-panel">
+        <div class="download-inner">
+          <div>
+            <p class="eyebrow">{t.download.eyebrow}</p>
+            <h2 class="section-title">{t.download.title}</h2>
+            <p class="section-body">{t.download.body}</p>
+            <div class="download-actions">
+              <a class="button gold" href={release.apkUrl} rel="noopener">
+                <Icon name="download" size={17} />
+                {t.download.button}
+              </a>
+              <a class="button ghost" href={release.releaseUrl} rel="noopener">
+                {t.download.notes}
+              </a>
+            </div>
+            <p class="download-meta">
+              {t.download.versionLabel}
+              <span dir="ltr">{release.version}</span>
+              <span class="meta-dot" aria-hidden="true">·</span>
+              <span dir="ltr">{release.size}</span>
+              <span class="meta-dot" aria-hidden="true">·</span>
+              <span dir="ltr">{t.download.android}</span>
+            </p>
+            <details class="checksum">
+              <summary>{t.download.verify}</summary>
+              <code>{release.sha256}</code>
+            </details>
+            <p class="download-note">{t.download.install}</p>
+          </div>
+          <aside class="download-aside">
+            <span class="release-label">{t.download.signed}</span>
+            <span class="release-number" dir="ltr">v{release.version}</span>
+            <span class="release-line">
+              <span dir="ltr">{release.published}</span>
+              <span aria-hidden="true"> · </span>
+              <span dir="ltr">Android 8.0+</span>
+            </span>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container privacy-grid">
+      <div>
+        <p class="eyebrow">{t.privacy.eyebrow}</p>
+        <h2 class="section-title">{t.privacy.title}</h2>
+        <p class="section-body">{t.privacy.body}</p>
+        <a class="text-link" href="/privacy/">
+          {t.privacy.link}
+          <Icon name="arrow" size={15} />
+        </a>
+      </div>
+      <div class="privacy-stats">
+        {
+          t.privacy.stats.map((stat) => (
+            <div class="privacy-stat">
+              <strong>{stat.value}</strong>
+              <span>{stat.label}</span>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</main>
+
+<Footer lang={lang} t={t} home={home} />

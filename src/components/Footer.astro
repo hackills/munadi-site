@@ -1,0 +1,57 @@
+---
+import Icon from './Icon.astro';
+import type { LandingContent, Lang } from '../data/content';
+
+interface Props {
+  lang: Lang;
+  t: LandingContent;
+  home: string;
+}
+
+const { lang, t, home } = Astro.props;
+const github = 'https://github.com/hackills/munadi-apks';
+const releases = `${github}/releases`;
+const issues = `${github}/issues`;
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href={home} aria-label={t.brand}>
+          <span class="brand-name">{t.brand}<span class="brand-dot" aria-hidden="true"></span></span>
+        </a>
+        <p class="footer-tagline">{t.footer.tagline}</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>{t.footer.productTitle}</h3>
+        <a href={`${home}#features`}>{t.nav.features}</a>
+        <a href={`${home}#download`}>{t.nav.download}</a>
+        <a href={releases} rel="noopener">{t.nav.releases}</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>{t.footer.trustTitle}</h3>
+        <a href="/privacy/">{t.nav.privacy}</a>
+        <a href="/licenses/">{t.nav.licenses}</a>
+        <a href={github} rel="noopener">{t.footer.github}</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>{t.footer.moreTitle}</h3>
+        <a href={`${github}/releases/latest`} rel="noopener">{t.footer.releases}</a>
+        <a href={issues} rel="noopener">{t.footer.issue}</a>
+        <a href="/licenses/#third-party">{lang === 'ar' ? 'إشعارات الأطراف الثالثة' : 'Third-party notices'}</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>{t.footer.copyright}</p>
+      <span class="footer-made">
+        <Icon name="heart" size={13} />
+        {t.footer.made}
+      </span>
+    </div>
+  </div>
+</footer>

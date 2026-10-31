@@ -1,0 +1,150 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { content } from '../data/content';
+
+const t = content.en;
+const appRepo = 'https://github.com/hackills/munadi-apks';
+const siteRepo = 'https://github.com/hackills/munadi-site';
+---
+
+<Base
+  lang="en"
+  title="Licenses — Munadi"
+  description="Munadi's application notice and the third-party licenses for its font, timetable data, and libraries."
+>
+  <Header lang="en" t={t} home="/" alternatePath="/ar/" />
+
+  <main id="main">
+    <section class="document-hero">
+      <div class="container">
+        <p class="eyebrow">Licenses</p>
+        <h1>Licenses &amp; notices</h1>
+        <p>
+          Munadi is proprietary software. It is built with a small set of third-party
+          components, each of which remains under its own license.
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <article class="document">
+        <h2>Application</h2>
+        <div class="license-list">
+          <div class="license-item">
+            <div>
+              <h3>Munadi</h3>
+              <p>Copyright © 2026 HStudios. All rights reserved.</p>
+              <div class="license-links">
+                <a href={`${appRepo}/blob/main/LICENSE`} rel="noopener">Read the license</a>
+                <a href={`${appRepo}/blob/main/NOTICE`} rel="noopener">NOTICE</a>
+              </div>
+            </div>
+            <span class="license-badge">Proprietary</span>
+          </div>
+          <div class="license-item">
+            <div>
+              <h3>This website</h3>
+              <p>The site code and its original content are © 2026 HStudios.</p>
+              <div class="license-links">
+                <a href={`${siteRepo}/blob/main/LICENSE`} rel="noopener">Read the license</a>
+              </div>
+            </div>
+            <span class="license-badge">Proprietary</span>
+          </div>
+        </div>
+
+        <h2 id="third-party">Third-party components</h2>
+        <div class="license-list">
+          <div class="license-item">
+            <div>
+              <h3>DM Sans</h3>
+              <p>
+                Copyright 2014 The DM Sans Project Authors. Used for the app and this
+                website.
+              </p>
+              <div class="license-links">
+                <a href="/licenses/dm-sans.txt">SIL OFL 1.1</a>
+                <a
+                  href="https://github.com/googlefonts/dm-fonts"
+                  rel="noopener"
+                >Project</a>
+              </div>
+            </div>
+            <span class="license-badge">OFL 1.1</span>
+          </div>
+
+          <div class="license-item">
+            <div>
+              <h3>Noto Sans Arabic</h3>
+              <p>
+                Copyright 2015–2021 Google LLC. Used for the Arabic typography on this
+                website.
+              </p>
+              <div class="license-links">
+                <a href="/licenses/noto-sans-arabic.txt">SIL OFL 1.1</a>
+                <a href="https://github.com/notofonts/arabic" rel="noopener">Project</a>
+              </div>
+            </div>
+            <span class="license-badge">OFL 1.1</span>
+          </div>
+
+          <div class="license-item">
+            <div>
+              <h3>Taqweem Qatar timetable</h3>
+              <p>
+                Copyright © 2026 Osama Al Assiry. The Qatar prayer-time data included
+                with Munadi.
+              </p>
+              <div class="license-links">
+                <a href="/licenses/taqweem-qatar.txt">MIT license</a>
+              </div>
+            </div>
+            <span class="license-badge">MIT</span>
+          </div>
+
+          <div class="license-item">
+            <div>
+              <h3>AndroidX, Jetpack Compose &amp; Glance</h3>
+              <p>
+                Copyright The Android Open Source Project. UI, settings, and the
+                home-screen widget.
+              </p>
+              <div class="license-links">
+                <a href="/licenses/apache-2.0.txt">Apache-2.0</a>
+                <a href="https://www.apache.org/licenses/LICENSE-2.0" rel="noopener">
+                  License text
+                </a>
+              </div>
+            </div>
+            <span class="license-badge">Apache-2.0</span>
+          </div>
+
+          <div class="license-item">
+            <div>
+              <h3>Kotlin &amp; kotlinx.coroutines</h3>
+              <p>Copyright JetBrains s.r.o. Language and runtime for the app.</p>
+              <div class="license-links">
+                <a href="/licenses/apache-2.0.txt">Apache-2.0</a>
+                <a href="https://kotlinlang.org" rel="noopener">Project</a>
+              </div>
+            </div>
+            <span class="license-badge">Apache-2.0</span>
+          </div>
+        </div>
+
+        <div class="note">
+          <p>
+            The app also includes the full license text for each component under
+            About → Licenses. The public repository carries the same
+            <a href={`${appRepo}/blob/main/NOTICE`} rel="noopener">NOTICE</a>
+            and third-party license files.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <Footer lang="en" t={t} home="/" />
+</Base>

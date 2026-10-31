@@ -1,0 +1,108 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  lang: 'en' | 'ar';
+  title: string;
+  description: string;
+  ogImage?: string;
+  alternatePath?: string | null;
+  preloadImage?: string;
+  noindex?: boolean;
+}
+
+const {
+  lang,
+  title,
+  description,
+  ogImage = '/og.png',
+  alternatePath = null,
+  preloadImage = null,
+  noindex = false,
+} = Astro.props;
+
+const site = Astro.site ?? new URL('http://localhost:4321');
+const canonical = new URL(Astro.url.pathname, site);
+const ogUrl = new URL(ogImage, site);
+const isArabic = lang === 'ar';
+const font = isArabic
+  ? '/fonts/NotoSansArabic-Regular.ttf'
+  : '/fonts/DMSans-Regular.ttf';
+const locale = isArabic ? 'ar_QA' : 'en_US';
+const alternateLocale = isArabic ? 'en_US' : 'ar_QA';
+---
+
+<!doctype html>
+<html lang={lang} dir={isArabic ? 'rtl' : 'ltr'}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#f7f4ed" />
+    <meta name="color-scheme" content="light" />
+    <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Munadi" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Munadi — prayer times for Qatar, quietly done"
+    />
+    <meta property="og:locale" content={locale} />
+    <meta property="og:locale:alternate" content={alternateLocale} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogUrl} />
+
+    {
+      alternatePath ? (
+        <>
+          <link
+            rel="alternate"
+            hreflang={isArabic ? 'en' : 'ar'}
+            href={new URL(alternatePath, site)}
+          />
+          <link rel="alternate" hreflang="x-default" href={new URL('/', site)} />
+        </>
+      ) : null
+    }
+
+    <link
+      rel="preload"
+      href={font}
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    {
+      preloadImage ? (
+        <link
+          rel="preload"
+          href={preloadImage}
+          as="image"
+          type="image/webp"
+          fetchpriority="high"
+        />
+      ) : null
+    }
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      {isArabic ? 'انتقل إلى المحتوى' : 'Skip to content'}
+    </a>
+    <slot />
+  </body>
+</html>

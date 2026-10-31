@@ -1,0 +1,24 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  eager?: boolean;
+  class?: string;
+}
+
+const { src, alt, eager = false, class: className } = Astro.props;
+---
+
+<div class:list={['phone', className]}>
+  <div class="phone-screen">
+    <img
+      src={src}
+      alt={alt}
+      width="720"
+      height="1493"
+      loading={eager ? 'eager' : 'lazy'}
+      fetchpriority={eager ? 'high' : 'auto'}
+      decoding="async"
+    />
+  </div>
+</div>

@@ -1,0 +1,122 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { content } from '../data/content';
+
+const t = content.en;
+const github = 'https://github.com/hackills/munadi-apks';
+---
+
+<Base
+  lang="en"
+  title="Privacy — Munadi"
+  description="How Munadi handles data: no accounts, ads, analytics, or trackers. Approximate location is used only for the Qibla compass."
+>
+  <Header lang="en" t={t} home="/" alternatePath="/ar/" />
+
+  <main id="main">
+    <section class="document-hero">
+      <div class="container">
+        <p class="eyebrow">Privacy</p>
+        <h1>Privacy policy</h1>
+        <p>
+          Munadi is an offline prayer-times app for Qatar. This policy explains what
+          the app does with data — and what it deliberately does not do.
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <article class="document">
+        <p class="effective">Effective: 31 October 2026</p>
+
+        <h2>Summary</h2>
+        <ul>
+          <li>No accounts, ads, analytics, or trackers.</li>
+          <li>Prayer times and settings stay on your device.</li>
+          <li>Approximate location is used only for the Qibla compass and place name.</li>
+          <li>We do not operate a server that receives your data.</li>
+        </ul>
+
+        <h2>Data the app uses</h2>
+
+        <h3>Approximate location</h3>
+        <p>
+          Munadi requests <strong>approximate location only</strong>; precise location
+          is not requested. It is used to calculate the Qibla direction and distance,
+          and to show a place name. The last approximate location and place are cached
+          in the app’s private storage so the Qibla screen can open quickly.
+        </p>
+        <p>
+          Android’s system geocoder may use network services to resolve a place name.
+          That request is handled by Android, not by a Munadi server.
+        </p>
+
+        <h3>Settings and timetable</h3>
+        <p>
+          Theme, colour, language, iqama offsets, notification preferences, and sound
+          choices are stored locally on your device. The Qatar Calendar House timetable
+          is built into the APK.
+        </p>
+
+        <h3>Network access</h3>
+        <p>
+          If update checks are enabled, the app requests the latest release information
+          from GitHub. GitHub receives standard network information such as your IP
+          address and the app’s user agent, subject to GitHub’s privacy policy. Munadi
+          does not send analytics, identifiers, or usage data.
+        </p>
+
+        <h3>Permissions</h3>
+        <p>Depending on the features you use, the app may request:</p>
+        <ul>
+          <li>Approximate location, for Qibla</li>
+          <li>Notifications, for adhan and update alerts</li>
+          <li>Exact alarms, to keep prayer reminders on time</li>
+          <li>Battery optimisation exemption, so alarms are not delayed</li>
+          <li>Internet, for optional update checks</li>
+          <li>Install unknown apps, for in-app updates</li>
+          <li>Foreground media playback and vibration, for the adhan</li>
+        </ul>
+        <p>You can decline optional permissions and still use the prayer timetable.</p>
+
+        <h2>Sharing and retention</h2>
+        <p>
+          We do not sell or share your data. Munadi has no accounts and no analytics
+          SDK. Local data remains until you clear the app’s storage or uninstall it.
+        </p>
+
+        <h2>Children</h2>
+        <p>
+          Munadi is a general-audience prayer app and does not knowingly collect
+          personal information from children.
+        </p>
+
+        <h2>Changes</h2>
+        <p>
+          This policy may be updated in the public repository. The effective date above
+          will change when it does.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Open an issue at
+          <a href={`${github}/issues`} rel="noopener">{github}/issues</a>.
+        </p>
+
+        <div class="note">
+          <h3>This website</h3>
+          <p>
+            This site is a static page hosted on Vercel. It uses no cookies, analytics,
+            or tracking scripts. Vercel processes standard request information — such
+            as your IP address and user agent — to serve and protect the site, subject
+            to Vercel’s privacy policy.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <Footer lang="en" t={t} home="/" />
+</Base>

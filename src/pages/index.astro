@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import Landing from '../components/Landing.astro';
+import { content } from '../data/content';
+import { getLatestRelease } from '../lib/release';
+
+const t = content.en;
+const release = await getLatestRelease();
+---
+
+<Base
+  lang="en"
+  title={t.meta.title}
+  description={t.meta.description}
+  alternatePath="/ar/"
+  preloadImage="/screenshots/home-light.webp"
+>
+  <Landing lang="en" release={release} />
+</Base>

@@ -1,0 +1,60 @@
+---
+import Icon from './Icon.astro';
+import type { LandingContent, Lang } from '../data/content';
+
+interface Props {
+  lang: Lang;
+  t: LandingContent;
+  home: string;
+  alternatePath: string;
+}
+
+const { lang, t, home, alternatePath } = Astro.props;
+const releases = 'https://github.com/hackills/munadi-apks/releases';
+const latest = 'https://github.com/hackills/munadi-apks/releases/latest';
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href={home} aria-label={t.brand}>
+      <span class="brand-name">{t.brand}<span class="brand-dot" aria-hidden="true"></span></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label={lang === 'ar' ? 'التنقل الرئيسي' : 'Main navigation'}>
+      <a href={`${home}#features`}>{t.nav.features}</a>
+      <a href="/privacy/">{t.nav.privacy}</a>
+      <a href="/licenses/">{t.nav.licenses}</a>
+      <a href={releases} rel="noopener">{t.nav.releases}</a>
+    </nav>
+
+    <div class="header-actions">
+      <a
+        class="lang-link"
+        href={alternatePath}
+        hreflang={lang === 'ar' ? 'en' : 'ar'}
+        lang={lang === 'ar' ? 'en' : 'ar'}
+      >
+        {t.nav.otherLang}
+      </a>
+      <a class="button primary small" href={latest} rel="noopener">
+        <Icon name="download" size={15} />
+        {t.nav.download}
+      </a>
+    </div>
+
+    <details class="mobile-menu">
+      <summary aria-label={t.nav.menu}>
+        <Icon name="menu" size={19} />
+      </summary>
+      <div class="mobile-menu-panel">
+        <a href={`${home}#features`}>{t.nav.features}</a>
+        <a href="/privacy/">{t.nav.privacy}</a>
+        <a href="/licenses/">{t.nav.licenses}</a>
+        <a href={releases} rel="noopener">{t.nav.releases}</a>
+        <a href={latest} rel="noopener">{t.nav.download}</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<script src="/nav.js" defer is:inline></script>

@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import Landing from '../../components/Landing.astro';
+import { content } from '../../data/content';
+import { getLatestRelease } from '../../lib/release';
+
+const t = content.ar;
+const release = await getLatestRelease();
+---
+
+<Base
+  lang="ar"
+  title={t.meta.title}
+  description={t.meta.description}
+  alternatePath="/"
+  preloadImage="/screenshots/home-ar.webp"
+>
+  <Landing lang="ar" release={release} />
+</Base>

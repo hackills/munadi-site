@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { content } from '../data/content';
+
+const t = content.en;
+---
+
+<Base
+  lang="en"
+  title="Page not found — Munadi"
+  description="The page you were looking for does not exist."
+  noindex
+>
+  <Header lang="en" t={t} home="/" alternatePath="/ar/" />
+  <main id="main" class="not-found">
+    <div class="container">
+      <p class="eyebrow">404</p>
+      <h1>Page not found.</h1>
+      <p>The page you were looking for does not exist. Return to the app page.</p>
+      <p><a class="button primary" href="/">Back to Munadi</a></p>
+    </div>
+  </main>
+  <Footer lang="en" t={t} home="/" />
+</Base>
