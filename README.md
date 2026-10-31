@@ -11,7 +11,6 @@ latest signed APK release.
 - [Astro](https://astro.build) static site
 - Local DM Sans and Noto Sans Arabic fonts
 - No client framework, cookies, analytics, or tracking scripts
-- Deployed on Vercel
 
 ## Local development
 
