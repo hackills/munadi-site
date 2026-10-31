@@ -92,7 +92,7 @@ export const content: Record<Lang, LandingContent> = {
     meta: {
       title: 'Munadi — Prayer times for Qatar, quietly done',
       description:
-        'A lightweight, private prayer-times app for Qatar: accurate offline timings, iqama, Qibla, adhan and widget in Arabic and English. No ads or trackers.',
+        'A lightweight, private prayer-times app for Qatar: accurate offline timings, iqamah, Qibla, adhan and widget in Arabic and English. No ads or trackers.',
     },
     brand: 'Munadi',
     nav: {
@@ -108,7 +108,7 @@ export const content: Record<Lang, LandingContent> = {
       eyebrow: 'Qatar prayer times · offline',
       title: 'Prayer times for Qatar.',
       titleAccent: 'Quietly done.',
-      body: 'Simple and lightweight, beautifully designed, and privacy-focused by default: accurate offline Qatar timings, iqama, qibla, adhan and widget—all in one, in Arabic and English, with no ads and no trackers.',
+      body: 'Simple and lightweight, beautifully designed, and privacy-focused by default: accurate offline Qatar timings, iqamah, qibla, adhan and widget—all in one, in Arabic and English, with no ads and no trackers.',
       primary: 'Download for Android',
       secondary: 'See what’s inside',
       badge: 'Private by default',
@@ -118,7 +118,7 @@ export const content: Record<Lang, LandingContent> = {
       'Qatar Calendar House',
       'Works offline',
       'Arabic & English',
-      'Iqama for every prayer',
+      'Iqamah for every prayer',
       'Home-screen widget',
     ],
     features: {
@@ -133,8 +133,8 @@ export const content: Record<Lang, LandingContent> = {
         },
         {
           icon: 'clock',
-          title: 'Iqama, your way',
-          body: 'Set a separate iqama offset for every prayer. Changes apply instantly.',
+          title: 'Iqamah, your way',
+          body: 'Set a separate iqamah offset for every prayer. Changes apply instantly.',
         },
         {
           icon: 'spark',
@@ -154,7 +154,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'widget',
           title: 'A widget that waits',
-          body: 'Next prayer and iqama on your home screen, with system light and dark.',
+          body: 'Next prayer and iqamah on your home screen, with system light and dark.',
         },
         {
           icon: 'globe',
@@ -174,7 +174,7 @@ export const content: Record<Lang, LandingContent> = {
       body: 'Munadi does not guess prayer times from the sun. It carries the Qatar Calendar House annual table inside the APK, so every time is the published Qatari time—even in airplane mode.',
       points: [
         'Qatar Calendar House annual table',
-        'Doha iqama defaults, editable per prayer',
+        'Doha iqamah defaults, editable per prayer',
         'Islamic midnight and the last third of the night',
         'Follows your Android 12/24-hour setting',
       ],
