@@ -27,16 +27,6 @@ npm run build
 npm run preview
 ```
 
-## Deployment
-
-The site is deployed on Vercel at https://munadi-prayer.vercel.app/. Pushes to
-`main` deploy to production; pull requests get preview URLs. No environment
-variables are required.
-
-For maintainers: `GITHUB_TOKEN` can be set to avoid GitHub API rate limits when
-the build reads the latest release. `SITE_URL` is only needed if a custom domain
-is added later.
-
 ## Release data
 
 `src/lib/release.ts` reads the latest public release from
