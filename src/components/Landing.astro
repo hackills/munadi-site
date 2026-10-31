@@ -18,6 +18,7 @@ const isAr = lang === 'ar';
 const home = isAr ? '/ar/' : '/';
 const alternatePath = isAr ? '/' : '/ar/';
 const heroImage = isAr ? '/screenshots/home-ar.webp' : '/screenshots/home-light.webp';
+const qiblaImage = isAr ? '/screenshots/qibla-ar.webp' : '/screenshots/qibla.webp';
 const otherHome = isAr ? '/screenshots/home-light.webp' : '/screenshots/home-ar.webp';
 ---
 
@@ -58,7 +59,7 @@ const otherHome = isAr ? '/screenshots/home-light.webp' : '/screenshots/home-ar.
         <div class="hero-arch" aria-hidden="true"></div>
         <div class="hero-phone hero-phone-back">
           <PhoneFrame
-            src="/screenshots/qibla.webp"
+            src={qiblaImage}
             alt={isAr ? 'شاشة القبلة في منادي' : 'Munadi Qibla screen'}
           />
         </div>
