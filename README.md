@@ -27,34 +27,15 @@ npm run build
 npm run preview
 ```
 
-## Deploy to Vercel
+## Deployment
 
-No custom domain is required. Vercel assigns a `*.vercel.app` URL when the
-project is created; it is not a domain you buy separately.
+The site is deployed on Vercel at https://munadi-prayer.vercel.app/. Pushes to
+`main` deploy to production; pull requests get preview URLs. No environment
+variables are required.
 
-1. Sign in to [Vercel](https://vercel.com) with the GitHub account that owns
-   `hackills/munadi-site`. Use one Vercel account; a separate GitHub identity is
-   not needed.
-2. Install the Vercel GitHub App and grant it access **only** to
-   `hackills/munadi-site`. Do not grant access to the private Android source
-   repository.
-3. In Vercel, choose **Add New → Project** and import `hackills/munadi-site`.
-4. Keep the detected **Astro** preset. Build command: `npm run build`; output
-   directory: `dist`.
-5. Choose a project name. Vercel will show the assigned URL after creation; do
-   not assume a particular name is available. Canonical links, the sitemap, and
-   social metadata read `VERCEL_PROJECT_PRODUCTION_URL` at build time, so they
-   follow the URL Vercel assigns.
-6. Deploy. No environment variables are required.
-
-Pushes to `main` deploy to production. Pull requests get preview URLs.
-
-### Optional environment variables
-
-- `GITHUB_TOKEN` — avoids GitHub API rate limits when the build reads the latest
-  release. The site falls back to the pinned release data if the API is
-  unavailable.
-- `SITE_URL` — only needed if a custom domain is added later.
+For maintainers: `GITHUB_TOKEN` can be set to avoid GitHub API rate limits when
+the build reads the latest release. `SITE_URL` is only needed if a custom domain
+is added later.
 
 ## Release data
 
