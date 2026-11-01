@@ -12,7 +12,7 @@ export interface ReleaseInfo {
 const fallback: ReleaseInfo = {
   version: '0.13.40',
   size: '8.4 MB',
-  sha256: '641d4263b72452ae7ed99e177794f67fb61e4a4b6aa04048e07bfa3e9238cc9c',
+  sha256: 'f428e26e9bec2ab3b31c2ca6669948fbe46b3c7d9359ba3b58711b84a0bb5dd5',
   apkUrl:
     'https://github.com/hackills/munadi-apks/releases/download/v0.13.40/munadi-0.13.40.apk',
   releaseUrl: 'https://github.com/hackills/munadi-apks/releases/tag/v0.13.40',
