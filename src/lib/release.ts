@@ -10,12 +10,12 @@ export interface ReleaseInfo {
 // Used when the GitHub API is unavailable during a build. Keep this in sync
 // with the newest public release so the page never ships without a download.
 const fallback: ReleaseInfo = {
-  version: '0.13.44',
+  version: '0.13.45',
   size: '8.4 MB',
-  sha256: '30839297fa79e4cda51e2005e88ac6b80dcab67164fdce1a284ac21c8eeff8d9',
+  sha256: '3ad908c1d59446b01f3bb8f3a2fc532d4e5f4555fd625fba9df4e5269b71590c',
   apkUrl:
-    'https://github.com/hackills/munadi-apks/releases/download/v0.13.44/munadi-0.13.44.apk',
-  releaseUrl: 'https://github.com/hackills/munadi-apks/releases/tag/v0.13.44',
+    'https://github.com/hackills/munadi-apks/releases/download/v0.13.45/munadi-0.13.45.apk',
+  releaseUrl: 'https://github.com/hackills/munadi-apks/releases/tag/v0.13.45',
   published: '1 November 2026',
 };
 
