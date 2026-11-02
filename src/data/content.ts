@@ -338,7 +338,7 @@ export const content: Record<Lang, LandingContent> = {
       android: 'Android 8.0+',
       verify: 'SHA-256',
       install:
-        'قد يطلب أندرويد السماح بالتثبيت من متصفحك. منادي ليس متوفرًا بعد على متجر Google Play أو متجر App Store.',
+        'قد يطلب أندرويد السماح بالتثبيت من متصفحك. منادي ليس متوفرًا بعد على متجر جوجل بلاي أو متجر آب ستور.',
       signed: 'إصدار موقّع',
     },
     privacy: {
