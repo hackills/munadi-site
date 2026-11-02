@@ -143,8 +143,8 @@ export const content: Record<Lang, LandingContent> = {
         },
         {
           icon: 'compass',
-          title: 'Qibla, one location permission',
-          body: 'A gold needle points to Makkah using approximate location alone — enough to face the right way, nothing more.',
+          title: 'Qibla, one permission, no extras',
+          body: 'A gold needle points to Makkah using approximate location alone — no extra permissions requested.',
         },
         {
           icon: 'volume',
@@ -281,8 +281,8 @@ export const content: Record<Lang, LandingContent> = {
         },
         {
           icon: 'compass',
-          title: 'القبلة بإذن موقع واحد فقط',
-          body: 'إبرة قلم ذهبية تشير إلى مكة باستخدام موقعك التقريبي فقط — يكفي لمعرفة الاتجاه، ولا يطلب أكثر من ذلك.',
+          title: 'القبلة بإذن واحد، بلا أذونات إضافية',
+          body: 'إبرة قلم ذهبية تشير إلى مكة باستخدام موقعك التقريبي فقط — دون طلب أي أذونات إضافية.',
         },
         {
           icon: 'volume',
