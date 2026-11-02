@@ -200,7 +200,7 @@ export const content: Record<Lang, LandingContent> = {
       android: 'Android 8.0+',
       verify: 'SHA-256',
       install:
-        'Android may ask you to allow installs from your browser. Munadi is not on Google Play.',
+        'Android may ask you to allow installs from your browser. Munadi is not yet available on the Google Play Store or Apple App Store.',
       signed: 'Signed release',
     },
     privacy: {
@@ -337,7 +337,8 @@ export const content: Record<Lang, LandingContent> = {
       versionLabel: 'الإصدار',
       android: 'Android 8.0+',
       verify: 'SHA-256',
-      install: 'قد يطلب أندرويد السماح بالتثبيت من متصفحك. منادي ليس على Google Play',
+      install:
+        'قد يطلب أندرويد السماح بالتثبيت من متصفحك. منادي ليس متوفرًا بعد على متجر Google Play أو متجر App Store.',
       signed: 'إصدار موقّع',
     },
     privacy: {
