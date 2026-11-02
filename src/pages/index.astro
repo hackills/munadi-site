@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Landing from '../components/Landing.astro';
 import { content } from '../data/content';
 import { getLatestRelease } from '../lib/release';
+import homeLight from '../assets/screenshots/home-light.webp';
 
 const t = content.en;
 const release = await getLatestRelease();
@@ -13,7 +14,7 @@ const release = await getLatestRelease();
   title={t.meta.title}
   description={t.meta.description}
   alternatePath="/ar/"
-  preloadImage="/screenshots/home-light.webp"
+  preloadImage={homeLight.src}
 >
   <Landing lang="en" release={release} />
 </Base>

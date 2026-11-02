@@ -6,6 +6,10 @@ import PhoneFrame from './PhoneFrame.astro';
 import type { Lang } from '../data/content';
 import { content } from '../data/content';
 import type { ReleaseInfo } from '../lib/release';
+import homeLight from '../assets/screenshots/home-light.webp';
+import homeAr from '../assets/screenshots/home-ar.webp';
+import qibla from '../assets/screenshots/qibla.webp';
+import qiblaAr from '../assets/screenshots/qibla-ar.webp';
 
 interface Props {
   lang: Lang;
@@ -17,9 +21,9 @@ const t = content[lang];
 const isAr = lang === 'ar';
 const home = isAr ? '/ar/' : '/';
 const alternatePath = isAr ? '/' : '/ar/';
-const heroImage = isAr ? '/screenshots/home-ar.webp' : '/screenshots/home-light.webp';
-const qiblaImage = isAr ? '/screenshots/qibla-ar.webp' : '/screenshots/qibla.webp';
-const otherHome = isAr ? '/screenshots/home-light.webp' : '/screenshots/home-ar.webp';
+const heroImage = (isAr ? homeAr : homeLight).src;
+const qiblaImage = (isAr ? qiblaAr : qibla).src;
+const otherHome = (isAr ? homeLight : homeAr).src;
 ---
 
 <Header lang={lang} t={t} home={home} alternatePath={alternatePath} />
