@@ -134,7 +134,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'clock',
           title: 'Iqamah, your way',
-          body: 'Set a separate iqamah offset for every prayer. Changes apply instantly.',
+          body: 'Set how many minutes pass between the adhan and iqamah for each prayer. Changes apply instantly.',
         },
         {
           icon: 'spark',
@@ -154,7 +154,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'widget',
           title: 'A widget that waits',
-          body: 'Next prayer and iqamah on your home screen, with system light and dark.',
+          body: 'Next prayer and iqamah on your home screen. One color for every widget — Dynamic, Munadi, Maroon, Sand, Ocean or Rose — and the card stays dark in both app themes.',
         },
         {
           icon: 'globe',
@@ -174,7 +174,7 @@ export const content: Record<Lang, LandingContent> = {
       body: 'Munadi does not guess prayer times from the sun. It carries the Qatar Calendar House annual table inside the APK, so every time is the published Qatari time—even in airplane mode.',
       points: [
         'Qatar Calendar House annual table',
-        'Doha iqamah defaults, editable per prayer',
+        'Qatar iqamah defaults, editable per prayer',
         'Islamic midnight and the last third of the night',
         'Follows your Android 12/24-hour setting',
       ],
@@ -272,7 +272,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'clock',
           title: 'الإقامة كما تريد',
-          body: 'حدّد فارق الإقامة لكل صلاة على حدة. التغييرات تُطبّق فورًا.',
+          body: 'حدّد عدد الدقائق بين الأذان والإقامة لكل صلاة. تُطبّق التغييرات فورًا.',
         },
         {
           icon: 'spark',
@@ -292,7 +292,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'widget',
           title: 'ودجة تنتظرك',
-          body: 'الصلاة القادمة والإقامة على شاشتك الرئيسية، بألوان النظام الفاتحة والداكنة.',
+          body: 'الصلاة القادمة والإقامة على شاشتك الرئيسية. لون واحد لجميع الودجات — ديناميكي، منادي، عنابي، رملي، محيطي أو وردي — وتبقى البطاقة داكنة في المظهرين.',
         },
         {
           icon: 'globe',
@@ -312,7 +312,7 @@ export const content: Record<Lang, LandingContent> = {
       body: 'لا يخمّن منادي مواقيت الصلاة من موقع الشمس. بل يحمل جدول تقويم قطر الدائم السنوي داخل التطبيق، لتكون كل مواقيت هي المواقيت القطرية المنشورة — حتى في وضع الطيران.',
       points: [
         'جدول تقويم قطر الدائم السنوي',
-        'إقامة الدوحة الافتراضية، قابلة للتعديل لكل صلاة',
+        'إقامة قطر الافتراضية، قابلة للتعديل لكل صلاة',
         'منتصف الليل الإسلامي والثلث الأخير من الليل',
         'يتبع إعداد 12/24 ساعة في أندرويد',
       ],
