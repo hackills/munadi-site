@@ -143,7 +143,7 @@ export const content: Record<Lang, LandingContent> = {
         },
         {
           icon: 'compass',
-          title: 'Qibla, with just enough location',
+          title: 'Qibla, no exact location needed',
           body: 'A gold needle points to Makkah using approximate location alone — enough to face the right way, nothing more.',
         },
         {
@@ -281,7 +281,7 @@ export const content: Record<Lang, LandingContent> = {
         },
         {
           icon: 'compass',
-          title: 'القبلة بموقع تقريبي يكفي',
+          title: 'القبلة دون الحاجة إلى موقع دقيق',
           body: 'إبرة قلم ذهبية تشير إلى مكة باستخدام موقعك التقريبي فقط — يكفي لمعرفة الاتجاه، ولا يطلب أكثر من ذلك.',
         },
         {
