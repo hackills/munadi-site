@@ -143,8 +143,8 @@ export const content: Record<Lang, LandingContent> = {
         },
         {
           icon: 'compass',
-          title: 'Qibla, without precise location',
-          body: 'A gold qalam needle points to Makkah using approximate location only.',
+          title: 'Qibla, with just enough location',
+          body: 'A gold pen-nib needle points to Makkah using approximate location alone — enough to face the right way, nothing more.',
         },
         {
           icon: 'volume',
@@ -281,8 +281,8 @@ export const content: Record<Lang, LandingContent> = {
         },
         {
           icon: 'compass',
-          title: 'القبلة دون تحديد دقيق',
-          body: 'إبرة قلم ذهبية تشير إلى مكة باستخدام الموقع التقريبي فقط.',
+          title: 'القبلة بموقع تقريبي يكفي',
+          body: 'إبرة قلم ذهبية تشير إلى مكة باستخدام موقعك التقريبي فقط — يكفي لمعرفة الاتجاه، ولا يطلب أكثر من ذلك.',
         },
         {
           icon: 'volume',
