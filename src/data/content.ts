@@ -200,7 +200,7 @@ export const content: Record<Lang, LandingContent> = {
       android: 'Android 8.0+',
       verify: 'SHA-256',
       install:
-        'Android may ask you to allow installs from your browser. Munadi is not yet available on the Google Play Store or Apple App Store.',
+        'Android may ask you to allow installs from your browser. Munadi is not yet available on the Google Play Store or the Apple App Store.',
       signed: 'Signed release',
     },
     privacy: {
