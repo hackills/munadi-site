@@ -139,7 +139,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'spark',
           title: 'The next prayer, clear',
-          body: 'A calm countdown, current and next highlighting, and the exact adhan time at a glance.',
+          body: 'A calm countdown, the current prayer highlighted, and the next prayer and adhan time at a glance.',
         },
         {
           icon: 'compass',
@@ -277,7 +277,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'spark',
           title: 'الصلاة القادمة بوضوح',
-          body: 'عدّاد هادئ، وإبراز للصلاة الحالية والقادمة، ووقت الأذان في لمحة.',
+          body: 'عدّاد هادئ، وإبراز للصلاة الحالية، والصلاة القادمة ووقت الأذان في لمحة.',
         },
         {
           icon: 'compass',
