@@ -144,7 +144,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'compass',
           title: 'Qibla, with just enough location',
-          body: 'A gold pen-nib needle points to Makkah using approximate location alone — enough to face the right way, nothing more.',
+          body: 'A gold needle points to Makkah using approximate location alone — enough to face the right way, nothing more.',
         },
         {
           icon: 'volume',
