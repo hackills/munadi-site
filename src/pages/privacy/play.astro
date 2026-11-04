@@ -1,0 +1,131 @@
+---
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { content } from '../../data/content';
+
+const t = content.en;
+---
+
+<Base
+  lang="en"
+  title="Privacy — Google Play build — Munadi"
+  description="How the Google Play build of Munadi handles data: no accounts, ads, analytics, or trackers. Approximate location is used only for Qibla, the place name, and the prayer-time area."
+>
+  <Header lang="en" t={t} home="/" alternatePath="/ar/" />
+
+  <main id="main">
+    <section class="document-hero">
+      <div class="container">
+        <p class="eyebrow">Privacy · Google Play</p>
+        <h1>Privacy policy</h1>
+        <p>
+          This policy covers the <strong>Google Play build</strong> of Munadi, the
+          version installed and updated by Google Play. It has no internet permission.
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <article class="document">
+        <p class="effective">Effective: 4 November 2026</p>
+
+        <p class="note">
+          <strong>Using the GitHub APK?</strong> That build can check GitHub for updates
+          and install them itself, so it has its own policy:
+          <a href="/privacy/">read the GitHub build policy</a>.
+        </p>
+
+        <h2>Summary</h2>
+        <ul>
+          <li>No accounts, ads, analytics, or trackers.</li>
+          <li>Prayer times and settings stay on your device.</li>
+          <li>
+            Approximate location is used for the Qibla compass, the place name, and the
+            prayer-time area.
+          </li>
+          <li>The app has no internet permission and sends no data to us.</li>
+        </ul>
+
+        <h2>Data the app uses</h2>
+
+        <h3>Approximate location</h3>
+        <p>
+          Munadi requests <strong>approximate location only</strong>; precise location
+          is not requested. It is used to calculate the Qibla direction and distance,
+          show a place name, and suggest the nearest prayer-time area. The last
+          approximate location and place are cached in the app’s private storage so the
+          Qibla screen can open quickly.
+        </p>
+        <p>
+          Place names are matched on the device from a built-in list. When location is
+          already allowed, the app may check it at launch to suggest an area. Your
+          location is not sent anywhere.
+        </p>
+
+        <h3>Settings and timetable</h3>
+        <p>
+          Theme, color, language, prayer-time area, iqamah adjustments, notification
+          preferences, and sound choices are stored locally on your device. The Qatar
+          Calendar House timetable is built into the APK.
+        </p>
+        <p>
+          Prayer times use the Doha table by default. You can choose Abu Samra, Dukhan,
+          or Al Shamal in Settings, and the app may suggest one when location is
+          available.
+        </p>
+
+        <h3>Network access</h3>
+        <p>
+          The Google Play build does not request the internet permission. Google Play
+          delivers app updates; the app itself never checks for, downloads, or installs
+          an update.
+        </p>
+
+        <h3>Permissions</h3>
+        <p>Depending on the features you use, the app may request:</p>
+        <ul>
+          <li>Approximate location, for Qibla</li>
+          <li>Notifications, for adhan and iqamah alerts</li>
+          <li>Exact alarms, to keep prayer reminders on time</li>
+          <li>Foreground media playback and vibration, for the adhan</li>
+        </ul>
+        <p>You can decline optional permissions and still use the prayer timetable.</p>
+
+        <h2>Sharing and retention</h2>
+        <p>
+          We do not sell or share your data. Munadi has no accounts and no analytics
+          SDK. Local data remains until you clear the app’s storage or uninstall it.
+        </p>
+
+        <h2>Children</h2>
+        <p>
+          Munadi is a general-audience prayer app and does not knowingly collect
+          personal information from children.
+        </p>
+
+        <h2>Changes</h2>
+        <p>
+          This policy may be updated. The effective date above will change when it does.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Email <a href="mailto:munadi.prayer@gmail.com">munadi.prayer@gmail.com</a>.
+        </p>
+
+        <div class="note">
+          <h3>This website</h3>
+          <p>
+            This site is a static page hosted on Vercel. It uses no cookies, analytics,
+            or tracking scripts. Vercel processes standard request information — such
+            as your IP address and user agent — to serve and protect the site, subject
+            to Vercel’s privacy policy.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <Footer lang="en" t={t} home="/" />
+</Base>
