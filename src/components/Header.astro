@@ -7,9 +7,11 @@ interface Props {
   t: LandingContent;
   home: string;
   alternatePath: string;
+  showDownload?: boolean;
 }
 
-const { lang, t, home, alternatePath } = Astro.props;
+const { lang, t, home, alternatePath, showDownload = true } = Astro.props;
+const privacyPath = lang === 'ar' ? '/ar/privacy/' : '/privacy/';
 const releases = 'https://github.com/hackills/munadi-apks/releases';
 const latest = 'https://github.com/hackills/munadi-apks/releases/latest';
 ---
@@ -22,7 +24,7 @@ const latest = 'https://github.com/hackills/munadi-apks/releases/latest';
 
     <nav class="desktop-nav" aria-label={lang === 'ar' ? 'التنقل الرئيسي' : 'Main navigation'}>
       <a href={`${home}#features`}>{t.nav.features}</a>
-      <a href="/privacy/">{t.nav.privacy}</a>
+      <a href={privacyPath}>{t.nav.privacy}</a>
       <a href="/licenses/">{t.nav.licenses}</a>
       <a href={releases} rel="noopener">{t.nav.releases}</a>
     </nav>
@@ -36,10 +38,12 @@ const latest = 'https://github.com/hackills/munadi-apks/releases/latest';
       >
         {t.nav.otherLang}
       </a>
-      <a class="button primary small" href={latest} rel="noopener">
-        <Icon name="download" size={15} />
-        {t.nav.download}
-      </a>
+      {showDownload && (
+        <a class="button primary small" href={latest} rel="noopener">
+          <Icon name="download" size={15} />
+          {t.nav.download}
+        </a>
+      )}
     </div>
 
     <details class="mobile-menu">
@@ -48,10 +52,10 @@ const latest = 'https://github.com/hackills/munadi-apks/releases/latest';
       </summary>
       <div class="mobile-menu-panel">
         <a href={`${home}#features`}>{t.nav.features}</a>
-        <a href="/privacy/">{t.nav.privacy}</a>
+        <a href={privacyPath}>{t.nav.privacy}</a>
         <a href="/licenses/">{t.nav.licenses}</a>
         <a href={releases} rel="noopener">{t.nav.releases}</a>
-        <a href={latest} rel="noopener">{t.nav.download}</a>
+        {showDownload && <a href={latest} rel="noopener">{t.nav.download}</a>}
       </div>
     </details>
   </div>

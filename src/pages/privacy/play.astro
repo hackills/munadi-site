@@ -12,7 +12,13 @@ const t = content.en;
   title="Privacy — Google Play build — Munadi"
   description="How the Google Play build of Munadi handles data: no accounts, ads, analytics, or trackers. Approximate location is used only for Qibla, the place name, and the prayer-time area."
 >
-  <Header lang="en" t={t} home="/" alternatePath="/ar/" />
+  <Header
+    lang="en"
+    t={t}
+    home="/"
+    alternatePath="/ar/privacy/play/"
+    showDownload={false}
+  />
 
   <main id="main">
     <section class="document-hero">
@@ -29,12 +35,6 @@ const t = content.en;
     <div class="container">
       <article class="document">
         <p class="effective">Effective: 4 November 2026</p>
-
-        <p class="note">
-          <strong>Using the GitHub APK?</strong> That build can check GitHub for updates
-          and install them itself, so it has its own policy:
-          <a href="/privacy/">read the GitHub build policy</a>.
-        </p>
 
         <h2>Summary</h2>
         <ul>
@@ -127,5 +127,5 @@ const t = content.en;
     </div>
   </main>
 
-  <Footer lang="en" t={t} home="/" />
+  <Footer lang="en" t={t} home="/" showDownload={false} />
 </Base>
