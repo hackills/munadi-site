@@ -92,7 +92,7 @@ export const content: Record<Lang, LandingContent> = {
     meta: {
       title: 'Munadi — Prayer times for Qatar, quietly done',
       description:
-        'A lightweight, private prayer-times app for Qatar: accurate offline timings, iqamah, Qibla, adhan and widget in Arabic and English. No ads or trackers.',
+        'A lightweight, private prayer-times app for Qatar: offline Doha, Abu Samra, Dukhan and Al Shamal timings, iqamah, Qibla, adhan and widget. No ads or trackers.',
     },
     brand: 'Munadi',
     nav: {
@@ -108,7 +108,7 @@ export const content: Record<Lang, LandingContent> = {
       eyebrow: 'Qatar prayer times · offline',
       title: 'Prayer times for Qatar.',
       titleAccent: 'Quietly done.',
-      body: 'Simple and lightweight, beautifully designed, and privacy-focused by default: accurate offline Qatar timings, iqamah, qibla, adhan and widget—all in one, in Arabic and English, with no ads and no trackers.',
+      body: 'Simple and lightweight, beautifully designed, and privacy-focused by default: accurate offline Qatar timings, with area shifts for Abu Samra, Dukhan and Al Shamal, iqamah, qibla, adhan and widget—all in one, in Arabic and English, with no ads and no trackers.',
       primary: 'Download for Android',
       secondary: 'See what’s inside',
       badge: 'Private by default',
@@ -116,6 +116,7 @@ export const content: Record<Lang, LandingContent> = {
     },
     strip: [
       'Qatar Calendar House',
+      'Area-specific timings',
       'Works offline',
       'Arabic & English',
       'Iqamah for every prayer',
@@ -144,17 +145,17 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'compass',
           title: 'Qibla, one permission, no extras',
-          body: 'A gold needle points to Makkah using approximate location alone — no extra permissions requested.',
+          body: 'A gold needle points to Makkah, corrected to true north, using approximate location alone — no extra permissions requested.',
         },
         {
           icon: 'volume',
           title: 'Adhan you choose',
-          body: 'Bundled adhans, short alerts, a beep, silence, or your own audio file.',
+          body: 'Bundled adhans, short alerts, a beep, silence, or your own audio file — plus a highest-priority mode for phones that delay alarms.',
         },
         {
           icon: 'widget',
           title: 'A widget that waits',
-          body: 'Next prayer and iqamah on your home screen. One color for every widget — Dynamic, Munadi, Maroon, Sand, Ocean or Rose — and the card stays dark in both app themes.',
+          body: 'Next prayer and iqamah on your home screen, with a countdown track, the Hijri date and sizes for every layout. One color for every widget — Dynamic, Munadi, Maroon, Sand, Ocean or Rose.',
         },
         {
           icon: 'globe',
@@ -164,19 +165,20 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'shield',
           title: 'Private by design',
-          body: 'No accounts, ads, analytics, or trackers. Your settings stay on your device.',
+          body: 'No accounts, ads, analytics, or trackers. Your settings and location stay on your device.',
         },
       ],
     },
     qatar: {
       eyebrow: 'Built for Qatar',
       title: 'The timetable is the app.',
-      body: 'Munadi does not guess prayer times from the sun. It carries the Qatar Calendar House annual table inside the APK, so every time is the published Qatari time—even in airplane mode.',
+      body: 'Munadi does not guess prayer times from the sun. It carries the Qatar Calendar House annual table inside the APK, so every time is the published Qatari time—even in airplane mode. Doha is the base, with the published Fajr and Maghrib shifts for Abu Samra, Dukhan and Al Shamal.',
       points: [
         'Qatar Calendar House annual table',
+        'Doha base with Abu Samra, Dukhan and Al Shamal shifts',
         'Qatar iqamah defaults, editable per prayer',
         'Islamic midnight and the last third of the night',
-        'Follows your Android 12/24-hour setting',
+        '12/24-hour time, following Android or your choice',
       ],
       quote: 'No network. No lookup. No waiting.',
       stat: '365',
@@ -193,7 +195,7 @@ export const content: Record<Lang, LandingContent> = {
     download: {
       eyebrow: 'Download',
       title: 'Take the quiet with you.',
-      body: 'The latest signed APK, direct from GitHub. Free, ad-free, and tracker-free.',
+      body: 'The latest signed APK, direct from GitHub. Free, ad-free, and tracker-free, with update checks you control and settings that move with you.',
       button: 'Download latest APK',
       notes: 'Release notes & checksum',
       versionLabel: 'Version',
@@ -206,7 +208,7 @@ export const content: Record<Lang, LandingContent> = {
     privacy: {
       eyebrow: 'Privacy',
       title: 'Your data stays yours.',
-      body: 'No accounts. No analytics. No tracking. Approximate location is used only for the Qibla compass and place name, and your settings stay on your device.',
+      body: 'No accounts. No analytics. No tracking. Approximate location is used only for the Qibla compass, place name and prayer-time area, and your settings stay on your device.',
       link: 'Read the privacy policy',
       stats: [
         { value: '0', label: 'accounts' },
@@ -230,7 +232,7 @@ export const content: Record<Lang, LandingContent> = {
     meta: {
       title: 'منادي — مواقيت الصلاة في قطر، بهدوء',
       description:
-        'تطبيق خفيف وخاص لمواقيت الصلاة في قطر: مواقيت دقيقة دون اتصال، مع الإقامة والقبلة والأذان والودجة بالعربية والإنجليزية. بلا إعلانات أو متتبعات.',
+        'تطبيق خفيف وخاص لمواقيت الصلاة في قطر: مواقيت دقيقة دون اتصال، مع فروق مناطق أبو سمرة ودخان والشمال، والإقامة والقبلة والأذان والودجة بالعربية والإنجليزية. بلا إعلانات أو متتبعات.',
     },
     brand: 'منادي',
     nav: {
@@ -246,7 +248,7 @@ export const content: Record<Lang, LandingContent> = {
       eyebrow: 'مواقيت الصلاة في قطر · دون اتصال',
       title: 'مواقيت الصلاة في قطر.',
       titleAccent: 'بهُدوء.',
-      body: 'بسيط وخفيف، مصمم بعناية، والخصوصية أساسه: مواقيت قطرية دقيقة دون اتصال، مع الإقامة والقبلة والأذان والودجة — كل ذلك في تطبيق واحد، بالعربية والإنجليزية، بلا إعلانات أو متتبعات.',
+      body: 'بسيط وخفيف، مصمم بعناية، والخصوصية أساسه: مواقيت قطرية دقيقة دون اتصال، مع فروق المناطق لأبو سمرة ودخان والشمال، والإقامة والقبلة والأذان والودجة — كل ذلك في تطبيق واحد، بالعربية والإنجليزية، بلا إعلانات أو متتبعات.',
       primary: 'حمّل لأندرويد',
       secondary: 'اكتشف التطبيق',
       badge: 'الخصوصية أساس التصميم',
@@ -254,6 +256,7 @@ export const content: Record<Lang, LandingContent> = {
     },
     strip: [
       'تقويم قطر الدائم',
+      'مواقيت حسب المنطقة',
       'يعمل دون اتصال',
       'بالعربية والإنجليزية',
       'إقامة لكل صلاة',
@@ -282,17 +285,17 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'compass',
           title: 'القبلة بإذن واحد، بلا أذونات إضافية',
-          body: 'إبرة قلم ذهبية تشير إلى مكة باستخدام موقعك التقريبي فقط — دون طلب أي أذونات إضافية.',
+          body: 'إبرة قلم ذهبية تشير إلى مكة، مصححة للشمال الحقيقي، باستخدام موقعك التقريبي فقط — دون طلب أي أذونات إضافية.',
         },
         {
           icon: 'volume',
           title: 'الأذان الذي تختاره',
-          body: 'أذانات مضمّنة، تنبيهات قصيرة، نغمة، صمت، أو ملفك الصوتي الخاص.',
+          body: 'أذانات مضمّنة، تنبيهات قصيرة، نغمة، صمت، أو ملفك الصوتي الخاص — مع وضع أعلى أولوية للهواتف التي تؤخر المنبّهات.',
         },
         {
           icon: 'widget',
           title: 'ودجة تنتظرك',
-          body: 'الصلاة القادمة والإقامة على شاشتك الرئيسية. لون واحد لجميع الودجات — ديناميكي، منادي، عنابي، رملي، محيطي أو وردي — وتبقى البطاقة داكنة في المظهرين.',
+          body: 'الصلاة القادمة والإقامة على شاشتك الرئيسية، مع شريط عدّ تنازلي والتاريخ الهجري وأحجام تناسب كل تخطيط. لون واحد لجميع الودجات — ديناميكي، منادي، عنابي، رملي، محيطي أو وردي.',
         },
         {
           icon: 'globe',
@@ -302,19 +305,20 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'shield',
           title: 'الخصوصية أساس التصميم',
-          body: 'لا حسابات، لا إعلانات، لا تحليلات، ولا متتبعات. إعداداتك تبقى على جهازك.',
+          body: 'لا حسابات، لا إعلانات، لا تحليلات، ولا متتبعات. إعداداتك وموقعك يبقيان على جهازك.',
         },
       ],
     },
     qatar: {
       eyebrow: 'مصمم لقطر',
       title: 'الجدول هو التطبيق.',
-      body: 'لا يخمّن منادي مواقيت الصلاة من موقع الشمس. بل يحمل جدول تقويم قطر الدائم السنوي داخل التطبيق، لتكون كل مواقيت هي المواقيت القطرية المنشورة — حتى في وضع الطيران.',
+      body: 'لا يخمّن منادي مواقيت الصلاة من موقع الشمس. بل يحمل جدول تقويم قطر الدائم السنوي داخل التطبيق، لتكون كل مواقيت هي المواقيت القطرية المنشورة — حتى في وضع الطيران. الدوحة هي الجدول الأساسي، مع فروق الفجر والمغرب المنشورة لأبو سمرة ودخان والشمال.',
       points: [
         'جدول تقويم قطر الدائم السنوي',
+        'الدوحة أساسًا، مع فروق أبو سمرة ودخان والشمال',
         'إقامة قطر الافتراضية، قابلة للتعديل لكل صلاة',
         'منتصف الليل الإسلامي والثلث الأخير من الليل',
-        'يتبع إعداد 12/24 ساعة في أندرويد',
+        'تنسيق 12/24 ساعة، حسب أندرويد أو اختيارك',
       ],
       quote: 'لا شبكة. لا بحث. لا انتظار.',
       stat: '365',
@@ -331,7 +335,7 @@ export const content: Record<Lang, LandingContent> = {
     download: {
       eyebrow: 'تحميل',
       title: 'خذ الهدوء معك.',
-      body: 'أحدث إصدار موقّع مباشرة من GitHub. مجاني، بلا إعلانات، وبلا متتبعات.',
+      body: 'أحدث إصدار موقّع مباشرة من GitHub. مجاني، بلا إعلانات، وبلا متتبعات، مع تحقق من التحديثات تتحكم فيه، وإعداداتك تنتقل معك.',
       button: 'حمّل أحدث إصدار',
       notes: 'ملاحظات الإصدار والبصمة',
       versionLabel: 'الإصدار',
@@ -344,7 +348,7 @@ export const content: Record<Lang, LandingContent> = {
     privacy: {
       eyebrow: 'الخصوصية',
       title: 'بياناتك تبقى لك.',
-      body: 'لا حسابات. لا تحليلات. لا تتبعات. يُستخدم الموقع التقريبي فقط لبوصلة القبلة واسم المكان، وتبقى إعداداتك على جهازك.',
+      body: 'لا حسابات. لا تحليلات. لا تتبعات. يُستخدم الموقع التقريبي فقط لبوصلة القبلة واسم المكان ومنطقة مواقيت الصلاة، وتبقى إعداداتك على جهازك.',
       link: 'اقرأ سياسة الخصوصية',
       stats: [
         { value: '0', label: 'حسابات' },
