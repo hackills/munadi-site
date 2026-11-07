@@ -21,7 +21,15 @@ const issues = `${github}/issues`;
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="brand" href={home} aria-label={t.brand}>
-          <span class="brand-name">{t.brand}<span class="brand-dot" aria-hidden="true"></span></span>
+          <img
+            class="brand-tile"
+            src="/favicon.svg"
+            width="30"
+            height="30"
+            alt=""
+            aria-hidden="true"
+          />
+          <span class="brand-name">{t.brand}</span>
         </a>
         <p class="footer-tagline">{t.footer.tagline}</p>
       </div>

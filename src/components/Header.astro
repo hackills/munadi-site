@@ -19,7 +19,15 @@ const latest = 'https://github.com/hackills/munadi-apks/releases/latest';
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href={home} aria-label={t.brand}>
-      <span class="brand-name">{t.brand}<span class="brand-dot" aria-hidden="true"></span></span>
+      <img
+        class="brand-tile"
+        src="/favicon.svg"
+        width="30"
+        height="30"
+        alt=""
+        aria-hidden="true"
+      />
+      <span class="brand-name">{t.brand}</span>
     </a>
 
     <nav class="desktop-nav" aria-label={lang === 'ar' ? 'التنقل الرئيسي' : 'Main navigation'}>
