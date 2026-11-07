@@ -30,6 +30,9 @@ const font = isArabic
   : '/fonts/DMSans-Regular.ttf';
 const locale = isArabic ? 'ar_QA' : 'en_US';
 const alternateLocale = isArabic ? 'en_US' : 'ar_QA';
+// Paste the token from Google Search Console's HTML-tag verification method.
+// Set GOOGLE_SITE_VERIFICATION in Vercel; leave it unset to omit the tag.
+const googleSiteVerification = import.meta.env.GOOGLE_SITE_VERIFICATION;
 ---
 
 <!doctype html>
@@ -43,6 +46,11 @@ const alternateLocale = isArabic ? 'en_US' : 'ar_QA';
     <meta name="theme-color" content="#f7f4ed" />
     <meta name="color-scheme" content="light" />
     <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
+    {
+      googleSiteVerification ? (
+        <meta name="google-site-verification" content={googleSiteVerification} />
+      ) : null
+    }
 
     <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
