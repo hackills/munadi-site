@@ -38,7 +38,7 @@ still has a working download if GitHub's API is unavailable during a build.
 ## Structure
 
 ```text
-public/              fonts, screenshots, license texts, OG image
+public/              fonts, icons, screenshots, license texts, OG image
 src/components/      header, footer, phone frame, icons, landing sections
 src/data/content.ts  English and Arabic copy
 src/lib/release.ts   latest GitHub release and fallback
