@@ -90,7 +90,7 @@ export interface LandingContent {
 export const content: Record<Lang, LandingContent> = {
   en: {
     meta: {
-      title: 'Munadi — Prayer times, built for Qatar, now in Pakistan',
+      title: 'Munadi — Prayer times, offline and private',
       description:
         'A lightweight, private prayer-times app, built for Qatar first and now in Pakistan too: offline timings, iqamah, Qibla, adhan and widget. No ads or trackers.',
     },
@@ -106,8 +106,8 @@ export const content: Record<Lang, LandingContent> = {
     },
     hero: {
       eyebrow: 'Built for Qatar · now in Pakistan · offline',
-      title: 'Prayer times, built for Qatar.',
-      titleAccent: 'Quietly done.',
+      title: 'Prayer times.',
+      titleAccent: 'Offline and private.',
       body: 'Simple and lightweight, beautifully designed, and privacy-focused by default: accurate offline prayer times, designed with care for Qatar first, now in Pakistan too, with iqamah, qibla, adhan and widget—all in one, in Arabic and English, with no ads and no trackers.',
       primary: 'Download for Android',
       secondary: 'See what’s inside',
@@ -231,7 +231,7 @@ export const content: Record<Lang, LandingContent> = {
   },
   ar: {
     meta: {
-      title: 'منادي — مواقيت الصلاة، صُمّم لقطر وتوسّع إلى باكستان',
+      title: 'منادي — مواقيت الصلاة، دون اتصال وبخصوصية',
       description:
         'تطبيق خفيف وخاص لمواقيت الصلاة، صُمّم لقطر أولًا وهو الآن في باكستان أيضًا: مواقيت دون اتصال، والإقامة والقبلة والأذان والودجة بالعربية والإنجليزية. بلا إعلانات أو متتبعات.',
     },
@@ -247,8 +247,8 @@ export const content: Record<Lang, LandingContent> = {
     },
     hero: {
       eyebrow: 'صُمّم لقطر · الآن في باكستان · دون اتصال',
-      title: 'مواقيت الصلاة، صُمّمت لقطر.',
-      titleAccent: 'بهُدوء.',
+      title: 'مواقيت الصلاة.',
+      titleAccent: 'دون اتصال، وبخصوصية.',
       body: 'بسيط وخفيف، مصمم بعناية، والخصوصية أساسه: مواقيت دقيقة دون اتصال، صُمّم بعناية لقطر أولًا، وهو الآن في باكستان أيضًا، مع الإقامة والقبلة والأذان والودجة — كل ذلك في تطبيق واحد، بالعربية والإنجليزية، بلا إعلانات أو متتبعات.',
       primary: 'حمّل لأندرويد',
       secondary: 'اكتشف التطبيق',
