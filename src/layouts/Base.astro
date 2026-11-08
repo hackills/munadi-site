@@ -28,8 +28,8 @@ const isArabic = lang === 'ar';
 const font = isArabic
   ? '/fonts/NotoSansArabic-Regular.ttf'
   : '/fonts/DMSans-Regular.ttf';
-const locale = isArabic ? 'ar_QA' : 'en_US';
-const alternateLocale = isArabic ? 'en_US' : 'ar_QA';
+const locale = isArabic ? 'ar' : 'en_US';
+const alternateLocale = isArabic ? 'en_US' : 'ar';
 // Paste the token from Google Search Console's HTML-tag verification method.
 // Set GOOGLE_SITE_VERIFICATION in Vercel; leave it unset to omit the tag.
 const googleSiteVerification = import.meta.env.GOOGLE_SITE_VERIFICATION;
@@ -69,7 +69,7 @@ const googleSiteVerification = import.meta.env.GOOGLE_SITE_VERIFICATION;
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="Munadi — prayer times for Qatar, quietly done"
+      content="Munadi — prayer times, built for Qatar, quietly done"
     />
     <meta property="og:locale" content={locale} />
     <meta property="og:locale:alternate" content={alternateLocale} />

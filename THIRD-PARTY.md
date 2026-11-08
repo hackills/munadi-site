@@ -30,6 +30,7 @@ on this site for the purpose of presenting the Munadi application.
 The site also lists the licenses for components used by the Android app:
 
 - Taqweem Qatar timetable data — MIT
+- Adhan prayer-time calculation library — MIT
 - AndroidX, Jetpack Compose and Glance — Apache-2.0
 - Kotlin and kotlinx.coroutines — Apache-2.0
 
