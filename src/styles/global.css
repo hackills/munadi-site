@@ -1631,9 +1631,12 @@ html[lang='ar'] .footer-bottom {
     grid-template-columns: 1fr;
   }
 
+  /* One phone, in normal flow, so the stage is always as tall as it is
+     and the phone never rides up over the trust row. */
   .hero-stage {
-    min-height: 560px;
+    min-height: 0;
     margin-top: 12px;
+    padding-top: 36px;
   }
 
   .hero-arch {
@@ -1646,7 +1649,8 @@ html[lang='ar'] .footer-bottom {
   }
 
   .hero-phone-front {
-    inset-inline: 0;
+    position: relative;
+    inset: auto;
     margin-inline: auto;
     width: min(68%, 290px);
   }
@@ -1710,10 +1714,6 @@ html[lang='ar'] .footer-bottom {
 
   html[lang='ar'] .hero h1 {
     font-size: clamp(2.45rem, 11.5vw, 3.9rem);
-  }
-
-  .hero-stage {
-    min-height: 490px;
   }
 
   .hero-arch {
@@ -1818,9 +1818,5 @@ html[lang='ar'] .footer-bottom {
 @media (max-width: 380px) {
   .hero-badge {
     display: none;
-  }
-
-  .hero-stage {
-    min-height: 450px;
   }
 }
