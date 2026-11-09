@@ -92,7 +92,7 @@ export const content: Record<Lang, LandingContent> = {
     meta: {
       title: 'Munadi — Prayer times, offline and private',
       description:
-        'A lightweight, private prayer-times app, built for Qatar first and now in Pakistan too: offline timings, iqamah, Qibla, adhan and widget. No ads or trackers.',
+        'A simple, beautiful, private prayer-times app that began in Qatar and is now in the Gulf and Pakistan too: offline timings, iqamah, Qibla, adhan and widget. No ads or trackers.',
     },
     brand: 'Munadi',
     nav: {
@@ -105,10 +105,10 @@ export const content: Record<Lang, LandingContent> = {
       otherLang: 'العربية',
     },
     hero: {
-      eyebrow: 'Built for Qatar · now in Pakistan · offline',
+      eyebrow: 'Began in Qatar · now in the Gulf and Pakistan · offline',
       title: 'Prayer times.',
       titleAccent: 'Offline and private.',
-      body: 'Simple and lightweight, beautifully designed, and privacy-focused by default: accurate offline prayer times, designed with care for Qatar first, now in Pakistan too, with iqamah, qibla, adhan and widget—all in one, in Arabic and English, with no ads and no trackers.',
+      body: 'Simple and lightweight, beautifully designed, and privacy-focused by default: accurate offline prayer times that began in Qatar and are now in the Gulf and Pakistan too, with iqamah, qibla, adhan and widget—all in one, in Arabic and English, with no ads and no trackers.',
       primary: 'Download for Android',
       secondary: 'See what’s inside',
       badge: 'Private by default',
@@ -116,7 +116,7 @@ export const content: Record<Lang, LandingContent> = {
     },
     strip: [
       'Qatar Calendar House',
-      'Qatar areas · Pakistan cities',
+      'Qatar areas · Gulf and Pakistan cities',
       'Works offline',
       'Arabic & English',
       'Iqamah for every prayer',
@@ -130,7 +130,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'cloud-off',
           title: 'Offline, always',
-          body: 'In Qatar the full Qatar Calendar House timetable ships inside the app; in Pakistan the times are calculated on your phone. No network, no lookup, no waiting.',
+          body: 'In Qatar the full Qatar Calendar House timetable ships inside the app; in the other supported countries the times are calculated on your phone. No network, no lookup, no waiting.',
         },
         {
           icon: 'clock',
@@ -170,14 +170,14 @@ export const content: Record<Lang, LandingContent> = {
       ],
     },
     qatar: {
-      eyebrow: 'Built for Qatar · Now in Pakistan',
+      eyebrow: 'Began in Qatar · Now in the Gulf and Pakistan',
       title: 'The timetable is the app.',
       body: 'In Qatar, Munadi does not guess prayer times from the sun. It carries the Qatar Calendar House annual table inside the app, so every time is the published Qatari time—even in airplane mode. Doha is the base, with the published Fajr and Maghrib shifts for Abu Samra, Dukhan and Al Shamal. Munadi has since expanded to Pakistan, where times are calculated on your phone with the Karachi method.',
       points: [
         'Qatar Calendar House annual table',
         'Doha base with Abu Samra, Dukhan and Al Shamal shifts',
-        'Qatar iqamah defaults, editable per prayer',
-        'Pakistan: calculated on your phone, Karachi method, Hanafi or Standard Asr',
+        'Iqamah defaults for Qatar and the UAE, editable per prayer',
+        'Saudi Arabia, the UAE, Kuwait, Oman and Pakistan: calculated on your phone with each country’s method',
         'Islamic midnight and the last third of the night',
         '12/24-hour time, following Android or your choice',
       ],
@@ -209,7 +209,7 @@ export const content: Record<Lang, LandingContent> = {
     privacy: {
       eyebrow: 'Privacy',
       title: 'Your data stays yours.',
-      body: 'No accounts. No analytics. No tracking. Approximate location is used only for the Qibla compass, place name and prayer-time area, Pakistan’s times are calculated on your device, and your settings stay on your device.',
+      body: 'No accounts. No analytics. No tracking. Approximate location is used only for the Qibla compass, place name and prayer-time area, times outside Qatar are calculated on your device, and your settings stay on your device.',
       link: 'Read the privacy policy',
       stats: [
         { value: '0', label: 'accounts' },
@@ -218,7 +218,7 @@ export const content: Record<Lang, LandingContent> = {
       ],
     },
     footer: {
-      tagline: 'A quiet, private prayer-times app, built for Qatar first.',
+      tagline: 'A simple, private prayer-times app. It began in Qatar.',
       productTitle: 'Product',
       trustTitle: 'Trust',
       moreTitle: 'More',
@@ -226,14 +226,14 @@ export const content: Record<Lang, LandingContent> = {
       github: 'GitHub',
       issue: 'Report an issue',
       copyright: '© 2026 HStudios. Munadi is proprietary software.',
-      made: 'Built for Qatar · now in Pakistan',
+      made: 'Began in Qatar · now in the Gulf and Pakistan',
     },
   },
   ar: {
     meta: {
       title: 'منادي — مواقيت الصلاة، دون اتصال وبخصوصية',
       description:
-        'تطبيق خفيف وخاص لمواقيت الصلاة، صُمّم لقطر أولًا وهو الآن في باكستان أيضًا: مواقيت دون اتصال، والإقامة والقبلة والأذان والودجة بالعربية والإنجليزية. بلا إعلانات أو متتبعات.',
+        'تطبيق بسيط وجميل وخاص لمواقيت الصلاة، بدأ في قطر وهو الآن في الخليج وباكستان أيضًا: مواقيت دون اتصال، والإقامة والقبلة والأذان والودجة بالعربية والإنجليزية. بلا إعلانات أو متتبعات.',
     },
     brand: 'منادي',
     nav: {
@@ -246,10 +246,10 @@ export const content: Record<Lang, LandingContent> = {
       otherLang: 'English',
     },
     hero: {
-      eyebrow: 'صُمّم لقطر · الآن في باكستان · دون اتصال',
+      eyebrow: 'بدأ في قطر · الآن في الخليج وباكستان · دون اتصال',
       title: 'مواقيت الصلاة.',
       titleAccent: 'دون اتصال، وبخصوصية.',
-      body: 'بسيط وخفيف، مصمم بعناية، والخصوصية أساسه: مواقيت دقيقة دون اتصال، صُمّم بعناية لقطر أولًا، وهو الآن في باكستان أيضًا، مع الإقامة والقبلة والأذان والودجة — كل ذلك في تطبيق واحد، بالعربية والإنجليزية، بلا إعلانات أو متتبعات.',
+      body: 'بسيط وخفيف، مصمم بعناية، والخصوصية أساسه: مواقيت دقيقة دون اتصال، بدأت في قطر وهي الآن في الخليج وباكستان أيضًا، مع الإقامة والقبلة والأذان والودجة — كل ذلك في تطبيق واحد، بالعربية والإنجليزية، بلا إعلانات أو متتبعات.',
       primary: 'حمّل لأندرويد',
       secondary: 'اكتشف التطبيق',
       badge: 'الخصوصية أساس التصميم',
@@ -257,7 +257,7 @@ export const content: Record<Lang, LandingContent> = {
     },
     strip: [
       'تقويم قطر الدائم',
-      'مناطق قطر · مدن باكستان',
+      'مناطق قطر · مدن الخليج وباكستان',
       'يعمل دون اتصال',
       'بالعربية والإنجليزية',
       'إقامة لكل صلاة',
@@ -271,7 +271,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'cloud-off',
           title: 'يعمل دون اتصال',
-          body: 'في قطر يأتي جدول تقويم قطر الدائم كاملًا داخل التطبيق، وفي باكستان تُحسب المواقيت على هاتفك. لا شبكة، لا بحث، ولا انتظار.',
+          body: 'في قطر يأتي جدول تقويم قطر الدائم كاملًا داخل التطبيق، وفي بقية البلدان المدعومة تُحسب المواقيت على هاتفك. لا شبكة، لا بحث، ولا انتظار.',
         },
         {
           icon: 'clock',
@@ -311,14 +311,14 @@ export const content: Record<Lang, LandingContent> = {
       ],
     },
     qatar: {
-      eyebrow: 'مصمم لقطر · والآن في باكستان',
+      eyebrow: 'بدأ في قطر · والآن في الخليج وباكستان',
       title: 'الجدول هو التطبيق.',
       body: 'في قطر لا يخمّن منادي مواقيت الصلاة من موقع الشمس. بل يحمل جدول تقويم قطر الدائم السنوي داخل التطبيق، لتكون كل مواقيت هي المواقيت القطرية المنشورة — حتى في وضع الطيران. الدوحة هي الجدول الأساسي، مع فروق الفجر والمغرب المنشورة لأبو سمرة ودخان والشمال. ثم توسّع منادي إلى باكستان، حيث تُحسب المواقيت على هاتفك بطريقة كراتشي.',
       points: [
         'جدول تقويم قطر الدائم السنوي',
         'الدوحة أساسًا، مع فروق أبو سمرة ودخان والشمال',
-        'إقامة قطر الافتراضية، قابلة للتعديل لكل صلاة',
-        'باكستان: تُحسب على هاتفك بطريقة كراتشي، مع العصر الحنفي أو القياسي',
+        'إقامة قطر والإمارات الافتراضية، قابلة للتعديل لكل صلاة',
+        'السعودية والإمارات والكويت وعُمان وباكستان: تُحسب على هاتفك بطريقة كل بلد',
         'منتصف الليل الإسلامي والثلث الأخير من الليل',
         'تنسيق 12/24 ساعة، حسب أندرويد أو اختيارك',
       ],
@@ -350,7 +350,7 @@ export const content: Record<Lang, LandingContent> = {
     privacy: {
       eyebrow: 'الخصوصية',
       title: 'بياناتك تبقى لك.',
-      body: 'لا حسابات. لا تحليلات. لا تتبعات. يُستخدم الموقع التقريبي فقط لبوصلة القبلة واسم المكان ومنطقة مواقيت الصلاة، وتُحسب مواقيت باكستان على جهازك، وتبقى إعداداتك على جهازك.',
+      body: 'لا حسابات. لا تحليلات. لا تتبعات. يُستخدم الموقع التقريبي فقط لبوصلة القبلة واسم المكان ومنطقة مواقيت الصلاة، وتُحسب المواقيت خارج قطر على جهازك، وتبقى إعداداتك على جهازك.',
       link: 'اقرأ سياسة الخصوصية',
       stats: [
         { value: '0', label: 'حسابات' },
@@ -359,7 +359,7 @@ export const content: Record<Lang, LandingContent> = {
       ],
     },
     footer: {
-      tagline: 'تطبيق مواقيت صلاة هادئ وخاص، صُمّم لقطر أولًا.',
+      tagline: 'تطبيق مواقيت صلاة بسيط وخاص. بدأ في قطر.',
       productTitle: 'المنتج',
       trustTitle: 'الثقة',
       moreTitle: 'المزيد',
@@ -367,7 +367,7 @@ export const content: Record<Lang, LandingContent> = {
       github: 'GitHub',
       issue: 'الإبلاغ عن مشكلة',
       copyright: '© 2026 HStudios. منادي برنامج خاص.',
-      made: 'صُمّم لقطر · والآن في باكستان',
+      made: 'بدأ في قطر · والآن في الخليج وباكستان',
     },
   },
 };
