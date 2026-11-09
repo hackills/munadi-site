@@ -570,7 +570,7 @@ summary {
   --phone-shadow: 0 22px 48px rgba(8, 20, 14, 0.2);
   position: relative;
   width: 100%;
-  aspect-ratio: 720 / 1493;
+  aspect-ratio: 720 / 1603;
   padding: 6px;
   /* Layered like real hardware: dark hairline, metal rim, black bezel. */
   border: 3px solid transparent;
@@ -608,6 +608,7 @@ summary {
 }
 
 .phone-screen {
+  position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -619,6 +620,21 @@ summary {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Punch-hole camera, centred in the status bar like the Pixel the
+   screenshots come from. */
+.phone-screen::after {
+  content: '';
+  position: absolute;
+  top: 2.1%;
+  left: 50%; /* physical, so it stays centred in RTL too */
+  width: 3.4%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #2a3430, #050807 62%);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+  transform: translateX(-50%);
 }
 
 /* Trust strip */
