@@ -529,7 +529,6 @@ summary {
   inset-block-start: -8px;
   inset-inline-end: -1%;
   width: min(47%, 252px);
-  transform: rotate(5deg);
   z-index: 1;
 }
 
@@ -537,7 +536,6 @@ summary {
   inset-block-end: -8px;
   inset-inline-start: 2%;
   width: min(59%, 310px);
-  transform: rotate(-4deg);
   z-index: 3;
 }
 
@@ -569,15 +567,28 @@ summary {
 /* Phone */
 
 .phone {
+  --phone-shadow: 0 22px 48px rgba(8, 20, 14, 0.2);
   position: relative;
   width: 100%;
   aspect-ratio: 720 / 1493;
-  padding: 9px;
+  padding: 6px;
+  /* Layered like real hardware: dark hairline, metal rim, black bezel. */
+  border: 3px solid transparent;
   border-radius: 44px;
-  background: linear-gradient(145deg, #1b2a22, #080d0a);
+  background:
+    linear-gradient(#0b100d, #0b100d) padding-box,
+    linear-gradient(
+        150deg,
+        #eef1ef 0%,
+        #a3ada7 28%,
+        #dfe4e1 52%,
+        #8e9993 78%,
+        #c9d0cc 100%
+      )
+      border-box;
   box-shadow:
-    0 34px 70px rgba(8, 20, 14, 0.32),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+    0 0 0 1px rgba(10, 16, 13, 0.55),
+    var(--phone-shadow);
 }
 
 .phone::after {
@@ -600,7 +611,7 @@ summary {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 36px;
+  border-radius: 35px;
   background: #000;
 }
 
@@ -961,11 +972,10 @@ summary {
   z-index: 1;
   width: min(100%, 278px);
   margin-inline: auto;
-  transform: rotate(3deg);
 }
 
 .bilingual-phone .phone {
-  box-shadow: 0 34px 70px rgba(0, 0, 0, 0.38);
+  --phone-shadow: 0 24px 52px rgba(0, 0, 0, 0.34);
 }
 
 /* Download */
@@ -1639,7 +1649,6 @@ html[lang='ar'] .footer-bottom {
     inset-inline: 0;
     margin-inline: auto;
     width: min(68%, 290px);
-    transform: rotate(-2deg);
   }
 
   .hero-badge {
@@ -1659,7 +1668,6 @@ html[lang='ar'] .footer-bottom {
 
   .bilingual-phone {
     width: min(70%, 250px);
-    transform: rotate(0);
   }
 
   .download-inner {
