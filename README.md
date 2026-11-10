@@ -38,7 +38,8 @@ still has a working download if GitHub's API is unavailable during a build.
 ## Structure
 
 ```text
-public/              fonts, icons, screenshots, license texts, OG image
+public/              fonts, icons, license texts, OG image
+src/assets/screenshots/  phone-mock images (see Phone mocks)
 src/components/      header, footer, phone frame, icons, landing sections
 src/data/content.ts  English and Arabic copy
 src/lib/release.ts   latest GitHub release and fallback
@@ -46,6 +47,35 @@ src/pages/           /, /ar/, /privacy, /licenses, 404
 src/styles/          global design system
 vercel.json          security headers and caching
 ```
+
+## Phone mocks
+
+The phone mocks are real emulator screenshots, so they go stale whenever the app's UI
+changes. Recapture them after any visible change to Home or Qibla.
+
+Files in `src/assets/screenshots/`: `home-light.webp`, `home-ar.webp`, `qibla.webp`,
+`qibla-ar.webp`.
+
+1. Use the `munadi-test` emulator (1344x2992). Install the current `github` debug build
+   from the app repo and set the language (`en` or `ar-EG`) and light theme in
+   `shared_prefs/munadi.settings.xml`. City is Doha.
+2. Set the clock to 15:33 so Asr is current and Maghrib is next (turn off
+   `auto_time`, then `adb shell date MMDDhhmm​YYYY.00`; turn it back on afterwards).
+3. Turn on SystemUI demo mode for a clean status bar: clock `1533`, Wi-Fi shown with
+   `-e fully true`, no mobile, battery 100 and not charging, notifications hidden.
+   Exit demo mode afterwards.
+4. Take the shots with `adb exec-out screencap -p`: Home, then Qibla, in English and
+   in Arabic.
+5. Keep the full 1344x2992 frame. Paint out the gesture handle by filling the bottom
+   rows (y from 2900, x from 380 to 964) with the background colour sampled at x=40
+   on each row, then resize to 720x1603 and save as WebP (quality about 82).
+6. Check at about 375px wide, in Arabic too, that the time and battery clear the
+   rounded corners.
+
+The frame (`.phone` in `src/styles/global.css`) is sized by the 720/1603 ratio and
+draws the rim and punch-hole camera in CSS. Its screen radius scales with the phone's
+width, so a status bar that is clipped on a small screen means the screenshot framing
+changed, not the CSS. Keep the same framing.
 
 ## Search indexing
 
