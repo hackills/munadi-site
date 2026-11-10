@@ -332,7 +332,7 @@ export const content: Record<Lang, LandingContent> = {
       title: 'English. العربية. لك.',
       body: 'الواجهة كاملة بالعربية والإنجليزية، باتجاه حقيقي من اليمين إلى اليسار — لا ترجمة مُلصقة.',
       chips: ['العربية', 'English'],
-      imageAlt: 'شاشة منادي الرئيسية بالعربية',
+      imageAlt: 'شاشة منادي الرئيسية بالإنجليزية',
     },
     download: {
       eyebrow: 'تحميل',
