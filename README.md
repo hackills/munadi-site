@@ -73,9 +73,11 @@ Files in `src/assets/screenshots/`: `home-light.webp`, `home-ar.webp`, `qibla.we
    rounded corners.
 
 The frame (`.phone` in `src/styles/global.css`) is sized by the 720/1603 ratio and
-draws the rim and punch-hole camera in CSS. Its screen radius scales with the phone's
-width, so a status bar that is clipped on a small screen means the screenshot framing
-changed, not the CSS. Keep the same framing.
+draws the rim and punch-hole camera in CSS. Both corner radii are percentages of the
+phone's size, and the screen's is the frame's minus the 9px of bezel and rim, so the
+bezel stays an even width round the corners. If you change the padding, border or
+either radius, keep them concentric. A status bar that is clipped on a small screen
+means the screenshot framing changed, not the CSS. Keep the same framing.
 
 ## Search indexing
 
