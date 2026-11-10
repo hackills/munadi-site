@@ -170,14 +170,13 @@ export const content: Record<Lang, LandingContent> = {
       ],
     },
     qatar: {
-      eyebrow: 'Began in Qatar · Now in the Gulf and Pakistan',
+      eyebrow: 'Began in Qatar · Now across the Gulf and Pakistan',
       title: 'The timetable is the app.',
-      body: 'In Qatar, Munadi does not guess prayer times from the sun. It carries the Qatar Calendar House annual table inside the app, so every time is the published Qatari time—even in airplane mode. Doha is the base, with the published Fajr and Maghrib shifts for Abu Samra, Dukhan and Al Shamal. Munadi has since expanded to Pakistan, where times are calculated on your phone with the Karachi method.',
+      body: 'In Qatar, Munadi carries the official Qatar Calendar House annual table inside the app, so every time is the published Qatari time—even in airplane mode. In Saudi Arabia, the UAE, Kuwait, Oman and Pakistan, times are calculated on your phone using each country’s official method. Either way, no network is needed.',
       points: [
-        'Qatar Calendar House annual table',
-        'Doha base with Abu Samra, Dukhan and Al Shamal shifts',
-        'Iqamah defaults for Qatar and the UAE, editable per prayer',
+        'Qatar: the official Qatar Calendar House annual table',
         'Saudi Arabia, the UAE, Kuwait, Oman and Pakistan: calculated on your phone with each country’s method',
+        'Iqamah defaults for Qatar and the UAE, editable per prayer',
         'Islamic midnight and the last third of the night',
         '12/24-hour time, following Android or your choice',
       ],
