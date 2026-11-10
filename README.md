@@ -2,8 +2,8 @@
 
 Live: https://munadi-prayer.vercel.app/
 
-The public landing page for **Munadi**, a lightweight, private prayer-times app
-built for Qatar first and now available in other regions, including Pakistan and the Gulf. It presents the app, its features, privacy policy, licenses, and the
+The public landing page for **Munadi**, a lightweight, private prayer-times app that
+began in Qatar and has since expanded across the Gulf and into Pakistan. It presents the app, its features, privacy policy, licenses, and the
 latest signed APK release.
 
 ## Stack

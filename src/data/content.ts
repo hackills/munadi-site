@@ -92,7 +92,7 @@ export const content: Record<Lang, LandingContent> = {
     meta: {
       title: 'Munadi — Prayer times, offline and private',
       description:
-        'A simple, beautiful, private prayer-times app that began in Qatar and is now in the Gulf and Pakistan too: offline timings, iqamah, Qibla, adhan and widget. No ads or trackers.',
+        'A simple, beautiful, private prayer-times app that began in Qatar and has since expanded across the Gulf and into Pakistan: offline timings, iqamah, Qibla, adhan and widget. No ads or trackers.',
     },
     brand: 'Munadi',
     nav: {
@@ -108,7 +108,7 @@ export const content: Record<Lang, LandingContent> = {
       eyebrow: 'Began in Qatar · now in the Gulf and Pakistan · offline',
       title: 'Prayer times.',
       titleAccent: 'Offline and private.',
-      body: 'Simple and lightweight, beautifully designed, and privacy-focused by default: accurate offline prayer times that began in Qatar and are now in the Gulf and Pakistan too, with iqamah, qibla, adhan and widget—all in one, in Arabic and English, with no ads and no trackers.',
+      body: 'Simple and lightweight, beautifully designed, and privacy-focused by default: accurate offline prayer times that began in Qatar and have since expanded across the Gulf and into Pakistan, with iqamah, qibla, adhan and widget—all in one, in Arabic and English, with no ads and no trackers.',
       primary: 'Download for Android',
       secondary: 'See what’s inside',
       badge: 'Private by default',
@@ -233,7 +233,7 @@ export const content: Record<Lang, LandingContent> = {
     meta: {
       title: 'منادي — مواقيت الصلاة، دون اتصال وبخصوصية',
       description:
-        'تطبيق بسيط وجميل وخاص لمواقيت الصلاة، بدأ في قطر وهو الآن في الخليج وباكستان أيضًا: مواقيت دون اتصال، والإقامة والقبلة والأذان والودجة بالعربية والإنجليزية. بلا إعلانات أو متتبعات.',
+        'تطبيق بسيط وجميل وخاص لمواقيت الصلاة، بدأ في قطر ثم توسّع في الخليج وإلى باكستان: مواقيت دون اتصال، والإقامة والقبلة والأذان والودجة بالعربية والإنجليزية. بلا إعلانات أو متتبعات.',
     },
     brand: 'منادي',
     nav: {
@@ -249,7 +249,7 @@ export const content: Record<Lang, LandingContent> = {
       eyebrow: 'بدأ في قطر · الآن في الخليج وباكستان · دون اتصال',
       title: 'مواقيت الصلاة.',
       titleAccent: 'دون اتصال، وبخصوصية.',
-      body: 'بسيط وخفيف، مصمم بعناية، والخصوصية أساسه: مواقيت دقيقة دون اتصال، بدأت في قطر وهي الآن في الخليج وباكستان أيضًا، مع الإقامة والقبلة والأذان والودجة — كل ذلك في تطبيق واحد، بالعربية والإنجليزية، بلا إعلانات أو متتبعات.',
+      body: 'بسيط وخفيف، مصمم بعناية، والخصوصية أساسه: مواقيت دقيقة دون اتصال، بدأت في قطر ثم توسّعت في الخليج وإلى باكستان، مع الإقامة والقبلة والأذان والودجة — كل ذلك في تطبيق واحد، بالعربية والإنجليزية، بلا إعلانات أو متتبعات.',
       primary: 'حمّل لأندرويد',
       secondary: 'اكتشف التطبيق',
       badge: 'الخصوصية أساس التصميم',
