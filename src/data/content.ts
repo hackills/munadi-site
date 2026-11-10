@@ -92,7 +92,7 @@ export const content: Record<Lang, LandingContent> = {
     meta: {
       title: 'Munadi — Prayer times, offline and private',
       description:
-        'A simple, beautiful, private prayer-times app that began in Qatar and has since expanded across the Gulf and into Pakistan: offline timings, iqamah, Qibla, adhan and widget. No ads or trackers.',
+        'A simple, beautiful, private prayer-times app that began in Qatar and has since expanded across the Gulf and into Pakistan: offline timings, iqamah, qibla, adhan and widget. No ads or trackers.',
     },
     brand: 'Munadi',
     nav: {
@@ -209,7 +209,7 @@ export const content: Record<Lang, LandingContent> = {
     privacy: {
       eyebrow: 'Privacy',
       title: 'Your data stays yours.',
-      body: 'No accounts. No analytics. No tracking. Approximate location is used only for the Qibla compass, place name and prayer-time area, times outside Qatar are calculated on your device, and your settings stay on your device.',
+      body: 'No accounts. No analytics. No tracking. Approximate location is used only for the qibla compass, place name and prayer-time area, times outside Qatar are calculated on your device, and your settings stay on your device.',
       link: 'Read the privacy policy',
       stats: [
         { value: '0', label: 'accounts' },
