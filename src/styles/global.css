@@ -572,7 +572,6 @@ summary {
   width: 100%;
   aspect-ratio: 720 / 1603;
   padding: 6px;
-  container-type: inline-size;
   /* Layered like real hardware: dark hairline, metal rim, black bezel. */
   border: 3px solid transparent;
   border-radius: 12% / 5.4%;
@@ -613,9 +612,10 @@ summary {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  /* Scales with the phone so the status bar clears the corners on small
-     phones too; a fixed 35px radius clipped the time and battery. */
-  border-radius: clamp(14px, 9.5cqw, 35px);
+  /* Concentric with the outer frame (12% minus the 9px of bezel and rim) and
+     proportional to the phone, so the bezel stays an even width round the
+     corners and the status bar clears the curve on small phones. */
+  border-radius: 9.4% / 4.2%;
   background: #000;
 }
 
