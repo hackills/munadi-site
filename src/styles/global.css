@@ -527,15 +527,15 @@ summary {
 
 .hero-phone-back {
   inset-block-start: -8px;
-  inset-inline-end: -1%;
-  width: min(47%, 252px);
+  inset-inline-end: -4%;
+  width: min(44%, 252px);
   z-index: 1;
 }
 
 .hero-phone-front {
   inset-block-end: -8px;
-  inset-inline-start: 2%;
-  width: min(59%, 310px);
+  inset-inline-start: 0;
+  width: min(55%, 310px);
   z-index: 3;
 }
 
