@@ -1,0 +1,83 @@
+---
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { content } from '../../data/content';
+
+const t = content.en;
+---
+
+<Base
+  lang="en"
+  title="Supported regions — Munadi"
+  description="The countries and regions Munadi supports, and how prayer times are worked out for each."
+>
+  <Header lang="en" t={t} home="/" alternatePath="/ar/regions/" />
+
+  <main id="main">
+    <section class="document-hero">
+      <div class="container">
+        <p class="eyebrow">Regions</p>
+        <h1>Supported regions</h1>
+        <p>
+          Munadi began in Qatar and has grown region by region. Every region works fully
+          offline: the times are either stored inside the app or calculated on your phone.
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <article class="document">
+        <h2>Qatar</h2>
+        <p>
+          Times follow the official Qatar Calendar House annual table, stored inside the
+          app. Doha is the default, with Abu Samra, Dukhan and Al Shamal available. Qatar
+          also has the mosque finder.
+        </p>
+
+        <h2>The Gulf</h2>
+        <ul>
+          <li>Saudi Arabia</li>
+          <li>United Arab Emirates</li>
+          <li>Kuwait</li>
+          <li>Oman</li>
+        </ul>
+        <p>Calculated on your phone, using each country’s method.</p>
+
+        <h2>North Africa</h2>
+        <ul>
+          <li>Egypt</li>
+          <li>Morocco</li>
+          <li>Algeria</li>
+        </ul>
+        <p>
+          Calculated on your phone with Munadi’s own solar calculation, checked against
+          each country’s official timetable.
+        </p>
+
+        <h2>Asia and beyond</h2>
+        <ul>
+          <li>Pakistan</li>
+          <li>Türkiye, checked against the Diyanet timetable</li>
+          <li>Indonesia, using the Kemenag method</li>
+          <li>Singapore, using the MUIS timetable stored inside the app</li>
+          <li>Tatarstan, following the rules published by its Spiritual Administration</li>
+        </ul>
+
+        <div class="note">
+          <h3>A note on times</h3>
+          <p>
+            Outside Qatar the times are worked out on your phone for the city you choose,
+            so they may differ by a minute or two from your local mosque. Iqamah gaps are
+            preset for Qatar and the UAE, and you can set your mosque’s gap anywhere.
+          </p>
+          <p>
+            Missing your region? <a href="https://github.com/hackills/munadi-apks/issues" rel="noopener">Tell us</a>.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <Footer lang="en" t={t} home="/" />
+</Base>
