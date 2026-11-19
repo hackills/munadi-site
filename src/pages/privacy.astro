@@ -31,11 +31,11 @@ const github = 'https://github.com/hackills/munadi-apks';
 
     <div class="container">
       <article class="document">
-        <p class="effective">Effective: 8 November 2026</p>
+        <p class="effective">Effective: 12 November 2026</p>
 
         <p class="note">
-          <strong>Installed from Google Play?</strong> The Play build has no internet
-          permission and no in-app updater, so it has its own policy:
+          <strong>Installed from Google Play?</strong> The Play build uses the internet
+          only for the optional mosque map and has no in-app updater, so it has its own policy:
           <a href="/privacy/play/">read the Google Play build policy</a>.
         </p>
 
@@ -47,6 +47,10 @@ const github = 'https://github.com/hackills/munadi-apks';
             Approximate location is used for the qibla compass, the place name, and the
             prayer-time area.
           </li>
+          <li>
+            Precise location is asked for only by the Qatar mosque finder, and stays on
+            your device.
+          </li>
           <li>We do not operate a server that receives your data.</li>
         </ul>
 
@@ -54,11 +58,10 @@ const github = 'https://github.com/hackills/munadi-apks';
 
         <h3>Approximate location</h3>
         <p>
-          Munadi requests <strong>approximate location only</strong>; precise location
-          is not requested. It is used to calculate the qibla direction and distance,
-          show a place name, and suggest the nearest prayer-time area. The last
-          approximate location and place are cached in the app’s private storage so the
-          qibla screen can open quickly.
+          Approximate location is used to calculate the qibla direction and distance,
+          show a place name, and suggest the nearest prayer-time area. These features
+          never ask for precise location. The last approximate location and place are
+          cached in the app’s private storage so the qibla screen can open quickly.
         </p>
         <p>
           Place names are matched on the device from a built-in list. When location is
@@ -70,6 +73,36 @@ const github = 'https://github.com/hackills/munadi-apks';
           card belong to, without any permission, only to open the right country in the
           city list. This stays on your device. Location may suggest the nearest listed
           city in any region, and never switches it for you.
+        </p>
+
+        <h3>Precise location and the mosque finder (Qatar)</h3>
+        <p>
+          When Qatar is the selected country, Munadi offers a mosque finder. It lists
+          mosques from a directory stored inside the app and sorts them by distance from
+          you. Approximate location is blurred by a kilometre or more, too much to tell
+          which mosque is nearest, so this screen, and only this screen, asks for
+          precise location. You can choose “Approximate” in the system dialog, or
+          decline, and still browse and search the directory.
+        </p>
+        <p>
+          Your position is read only while the mosque finder is open, is compared with
+          the directory on your device, and is not stored by the finder or sent
+          anywhere. When you tap Navigate or Share, Munadi hands the mosque’s
+          coordinates, never yours, to the maps app or the app you choose; what that
+          app does with them is covered by its own policy.
+        </p>
+
+        <h3>Mosque map (Qatar)</h3>
+        <p>
+          The mosque finder can also show a street map. The map is optional and asks
+          before it is first used. It is drawn inside the app from map tiles requested
+          from <a href="https://openfreemap.org" rel="noopener">OpenFreeMap</a>, which
+          may deliver them through Cloudflare. Like any website you open, that service
+          receives your device’s IP address and the map area being requested, so it can
+          tell roughly which area you are looking at. Munadi does not send your
+          location, any identifier, or anything about you with those requests, and
+          nothing is sent to us. Tiles you have viewed may be kept in the app’s cache
+          on your device. If you never open the map, none of this happens.
         </p>
 
         <h3>Settings and timetable</h3>
@@ -84,7 +117,7 @@ const github = 'https://github.com/hackills/munadi-apks';
           Al Shamal in Settings, and the app may suggest one when location is available.
         </p>
         <p>
-          In other regions (currently Saudi Arabia, the United Arab Emirates, Kuwait, Oman, and Pakistan), prayer times are calculated on your
+          In other regions (currently Saudi Arabia, the United Arab Emirates, Kuwait, Oman, Egypt, Morocco, Algeria, Pakistan, Türkiye, Indonesia, Singapore, and Tatarstan), prayer times are calculated on your
           device from the coordinates of the city you choose in Settings, using an
           open-source calculation library. Nothing about the calculation leaves your
           device.
@@ -106,10 +139,11 @@ const github = 'https://github.com/hackills/munadi-apks';
         <p>Depending on the features you use, the app may request:</p>
         <ul>
           <li>Approximate location, for qibla and the prayer-time area</li>
-          <li>Notifications, for adhan, iqamah, and update alerts</li>
+          <li>Precise location, only for the Qatar mosque finder</li>
+          <li>Notifications, for adhan and update alerts</li>
           <li>Exact alarms, to keep prayer reminders on time</li>
           <li>Battery optimisation exemption, so alarms are not delayed</li>
-          <li>Internet, for optional update checks</li>
+          <li>Internet, for optional update checks and the optional mosque map</li>
           <li>Install unknown apps, for in-app updates</li>
           <li>Foreground media playback and vibration, for the adhan</li>
         </ul>
