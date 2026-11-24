@@ -65,11 +65,20 @@ Files in `src/assets/screenshots/`: `home-light.webp`, `home-ar.webp`, `qibla.we
    `-e fully true`, no mobile, battery 100 and not charging, notifications hidden.
    Exit demo mode afterwards.
 4. Take the shots with `adb exec-out screencap -p`: Home, then Qibla, in English and
-   in Arabic.
-5. Keep the full 1344x2992 frame. Paint out the gesture handle by filling the bottom
+   in Arabic. For Qibla, grant location (`adb shell pm grant app.munadi
+   android.permission.ACCESS_COARSE_LOCATION`) and set `adb emu geo fix 51.531 25.286`.
+   Lay the phone flat (`adb emu sensor set acceleration 0:0:9.81`) and turn it by setting
+   `magnetic-field` to a few headings well apart, resting a few seconds on each, so the
+   compass check passes. End on `32.10:-13.96:-30`, which points the needle straight up
+   with the glow on.
+5. The social card (`public/og.png`, 1200x630) has no source file. Its phone screen is
+   x 847–1124, y 43–602 with 25px corners; the Home shot fits it at 0.1987 scale, cropped
+   below the status bar. Bump `?v=` on `ogImage` in `src/layouts/Base.astro` after
+   changing it.
+6. Keep the full 1344x2992 frame. Paint out the gesture handle by filling the bottom
    rows (y from 2900, x from 380 to 964) with the background colour sampled at x=40
    on each row, then resize to 720x1603 and save as WebP (quality about 82).
-6. Check at about 375px wide, in Arabic too, that the time and battery clear the
+7. Check at about 375px wide, in Arabic too, that the time and battery clear the
    rounded corners.
 
 The frame (`.phone` in `src/styles/global.css`) is sized by the 720/1603 ratio and
