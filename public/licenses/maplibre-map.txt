@@ -1,0 +1,55 @@
+Map
+
+The mosque map is drawn by MapLibre GL JS, with map data and tiles from
+OpenFreeMap, OpenMapTiles and OpenStreetMap contributors. Arabic labels are
+shaped by the Mapbox RTL text plugin. Both libraries are bundled in the app.
+
+Map data
+© OpenStreetMap contributors, licensed under the Open Database License (ODbL).
+https://www.openstreetmap.org/copyright
+Tile schema © OpenMapTiles (CC BY 4.0). https://openmaptiles.org/
+Tiles and style served by OpenFreeMap. https://openfreemap.org/
+
+--------------------------------------------------------------------------
+
+MapLibre GL JS 5.24.0
+
+Copyright (c) 2023, MapLibre contributors
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+    * Neither the name of MapLibre GL JS nor the names of its contributors
+      may be used to endorse or promote products derived from this software
+      without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+MapLibre GL JS contains code from Mapbox GL JS v1.13 and earlier,
+Copyright (c) 2020, Mapbox, under the same 3-Clause BSD terms.
+
+--------------------------------------------------------------------------
+
+Mapbox GL RTL text plugin 0.3.0 (@mapbox/mapbox-gl-rtl-text)
+
+Copyright (c) Mapbox. Licensed under the BSD 2-Clause License.
+It includes ICU (International Components for Unicode),
+Copyright (c) Unicode, Inc., under the Unicode License.
+https://github.com/mapbox/mapbox-gl-rtl-text

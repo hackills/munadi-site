@@ -1,0 +1,8 @@
+Moon map
+
+The moon on the night card shows the Moon's near side, made from the Lunar Reconnaissance Orbiter Camera (LROC) Wide Angle Camera colour mosaic in NASA's CGI Moon Kit. The map was projected onto the near side, reduced to 64 by 64 pixels and turned to grey for the app to tint.
+
+Credit: NASA's Scientific Visualization Studio; LROC imagery, NASA/GSFC/Arizona State University.
+Source: https://svs.gsfc.nasa.gov/4720
+
+NASA imagery is generally not subject to copyright in the United States. Munadi is not endorsed by NASA.

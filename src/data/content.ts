@@ -109,7 +109,7 @@ export const content: Record<Lang, LandingContent> = {
       eyebrow: 'Began in Qatar · now across the Gulf, North Africa and beyond · offline',
       title: 'Prayer times.',
       titleAccent: 'Offline and private.',
-      body: 'Simple and lightweight, beautifully designed, and privacy-focused by default: accurate offline prayer times that began in Qatar and have since expanded across the Gulf, Egypt, Türkiye, Indonesia and more, with iqamah, qibla, adhan and widget—all in one, in Arabic and English, with no ads and no trackers.',
+      body: 'Simple and lightweight, beautifully designed, and privacy-focused by default: accurate offline prayer times that began in Qatar and have since expanded across the Gulf, Egypt, Türkiye, Indonesia and more, with iqamah, qibla, adhan and widget—all in one, in Arabic, English and Urdu, with no ads and no trackers.',
       primary: 'Download for Android',
       secondary: 'See what’s inside',
       badge: 'Private by default',
@@ -119,7 +119,7 @@ export const content: Record<Lang, LandingContent> = {
       'Qatar Calendar House',
       'Qatar areas · cities across the Gulf, North Africa and beyond',
       'Works offline',
-      'Arabic & English',
+      'Arabic, English & Urdu',
       'Iqamah for every prayer',
       'Home-screen widget',
     ],
@@ -151,7 +151,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'volume',
           title: 'Adhan you choose',
-          body: 'Bundled adhans, short alerts, a beep, silence, or your own audio file — plus a highest-priority mode for phones that delay alarms.',
+          body: 'Bundled adhans, short alerts, a beep, silence, or your own audio file — plus a highest-priority mode for phones that delay alarms. Every adhan starts softly and rises to full volume, and on a Wear OS watch it can show as a Live Update you stop from your wrist.',
         },
         {
           icon: 'calendar',
@@ -171,12 +171,12 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'widget',
           title: 'A widget that waits',
-          body: 'Next prayer and iqamah on your home screen, with a countdown track, the Hijri date and sizes for every layout. One color for every widget — Dynamic, Munadi, Maroon, Sand, Ocean or Rose.',
+          body: 'Next prayer and iqamah on your home screen, with a timeline that shows time passing and the time left to the next prayer, the Hijri date and sizes for every layout. One color for every widget — Dynamic, Munadi, Maroon, Sand, Ocean or Rose.',
         },
         {
           icon: 'globe',
-          title: 'Arabic and English',
-          body: 'A complete Arabic interface with a proper right-to-left layout.',
+          title: 'Arabic, English and Urdu',
+          body: 'Complete Arabic and Urdu interfaces with a proper right-to-left layout, alongside English.',
         },
         {
           icon: 'shield',
@@ -204,10 +204,10 @@ export const content: Record<Lang, LandingContent> = {
       label: 'Qatar Calendar House',
     },
     bilingual: {
-      eyebrow: 'One app · Two languages',
-      title: 'English. العربية. Yours.',
-      body: 'The whole interface is available in Arabic and English, with a true right-to-left layout—not a translation bolted on.',
-      chips: ['العربية', 'English'],
+      eyebrow: 'One app · Three languages',
+      title: 'English. العربية. اردو. Yours.',
+      body: 'The whole interface is available in Arabic, English and Urdu, with a true right-to-left layout for Arabic and Urdu—not a translation bolted on.',
+      chips: ['العربية', 'English', 'اردو'],
       imageAlt: 'Munadi home screen in Arabic',
     },
     download: {
@@ -250,7 +250,7 @@ export const content: Record<Lang, LandingContent> = {
     meta: {
       title: 'منادي — مواقيت الصلاة، دون اتصال وبخصوصية',
       description:
-        'تطبيق بسيط وجميل وخاص لمواقيت الصلاة، بدأ في قطر ثم توسّع في الخليج ومصر وتركيا وإندونيسيا ودول أخرى: مواقيت دون اتصال، والإقامة والقبلة والأذان والودجة بالعربية والإنجليزية. بلا إعلانات أو متتبعات.',
+        'تطبيق بسيط وجميل وخاص لمواقيت الصلاة، بدأ في قطر ثم توسّع في الخليج ومصر وتركيا وإندونيسيا ودول أخرى: مواقيت دون اتصال، والإقامة والقبلة والأذان والودجة بالعربية والإنجليزية والأردية. بلا إعلانات أو متتبعات.',
     },
     brand: 'منادي',
     nav: {
@@ -266,7 +266,7 @@ export const content: Record<Lang, LandingContent> = {
       eyebrow: 'بدأ في قطر · الآن في الخليج وشمال إفريقيا وما بعدها · دون اتصال',
       title: 'مواقيت الصلاة.',
       titleAccent: 'دون اتصال، وبخصوصية.',
-      body: 'بسيط وخفيف، مصمم بعناية، والخصوصية أساسه: مواقيت دقيقة دون اتصال، بدأت في قطر ثم توسّعت في الخليج ومصر وتركيا وإندونيسيا ودول أخرى، مع الإقامة والقبلة والأذان والودجة — كل ذلك في تطبيق واحد، بالعربية والإنجليزية، بلا إعلانات أو متتبعات.',
+      body: 'بسيط وخفيف، مصمم بعناية، والخصوصية أساسه: مواقيت دقيقة دون اتصال، بدأت في قطر ثم توسّعت في الخليج ومصر وتركيا وإندونيسيا ودول أخرى، مع الإقامة والقبلة والأذان والودجة — كل ذلك في تطبيق واحد، بالعربية والإنجليزية والأردية، بلا إعلانات أو متتبعات.',
       primary: 'حمّل لأندرويد',
       secondary: 'اكتشف التطبيق',
       badge: 'الخصوصية أساس التصميم',
@@ -276,7 +276,7 @@ export const content: Record<Lang, LandingContent> = {
       'تقويم قطر الدائم',
       'مناطق قطر · مدن الخليج وشمال إفريقيا وما بعدها',
       'يعمل دون اتصال',
-      'بالعربية والإنجليزية',
+      'بالعربية والإنجليزية والأردية',
       'إقامة لكل صلاة',
       'ودجة للشاشة الرئيسية',
     ],
@@ -308,7 +308,7 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'volume',
           title: 'الأذان الذي تختاره',
-          body: 'أذانات مضمّنة، تنبيهات قصيرة، نغمة، صمت، أو ملفك الصوتي الخاص — مع وضع أعلى أولوية للهواتف التي تؤخر المنبّهات.',
+          body: 'أذانات مضمّنة، تنبيهات قصيرة، نغمة، صمت، أو ملفك الصوتي الخاص — مع وضع أعلى أولوية للهواتف التي تؤخر المنبّهات. يبدأ كل أذان بصوت خافت ثم يرتفع إلى الصوت الكامل، ويمكن أن يظهر على ساعة Wear OS كتحديث مباشر توقفه من معصمك.',
         },
         {
           icon: 'calendar',
@@ -328,12 +328,12 @@ export const content: Record<Lang, LandingContent> = {
         {
           icon: 'widget',
           title: 'ودجة تنتظرك',
-          body: 'الصلاة القادمة والإقامة على شاشتك الرئيسية، مع شريط عدّ تنازلي والتاريخ الهجري وأحجام تناسب كل تخطيط. لون واحد لجميع الودجات — ديناميكي، منادي، عنابي، رملي، محيطي أو وردي.',
+          body: 'الصلاة القادمة والإقامة على شاشتك الرئيسية، مع خط زمني يُظهر مرور الوقت والوقت المتبقي للصلاة القادمة، والتاريخ الهجري وأحجام تناسب كل تخطيط. لون واحد لجميع الودجات — ديناميكي، منادي، عنابي، رملي، محيطي أو وردي.',
         },
         {
           icon: 'globe',
-          title: 'بالعربية والإنجليزية',
-          body: 'واجهة عربية كاملة باتجاه صحيح من اليمين إلى اليسار.',
+          title: 'بالعربية والإنجليزية والأردية',
+          body: 'واجهتان عربية وأردية كاملتان باتجاه صحيح من اليمين إلى اليسار، إلى جانب الإنجليزية.',
         },
         {
           icon: 'shield',
@@ -362,10 +362,10 @@ export const content: Record<Lang, LandingContent> = {
       label: 'تقويم قطر الدائم',
     },
     bilingual: {
-      eyebrow: 'تطبيق واحد · لغتان',
-      title: 'English. العربية. لك.',
-      body: 'الواجهة كاملة بالعربية والإنجليزية، باتجاه حقيقي من اليمين إلى اليسار — لا ترجمة مُلصقة.',
-      chips: ['العربية', 'English'],
+      eyebrow: 'تطبيق واحد · ثلاث لغات',
+      title: 'English. العربية. اردو. لك.',
+      body: 'الواجهة كاملة بالعربية والإنجليزية والأردية، باتجاه حقيقي من اليمين إلى اليسار للعربية والأردية — لا ترجمة مُلصقة.',
+      chips: ['العربية', 'English', 'اردو'],
       imageAlt: 'شاشة منادي الرئيسية بالعربية',
     },
     download: {
